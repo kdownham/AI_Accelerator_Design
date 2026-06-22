@@ -1,0 +1,494 @@
+
+  ++++++++++++++++++++++++++++++++++++++++++++
+  +     MAD-X 5.09.01  (64 bit, Linux)       +
+  + Support: mad@cern.ch, http://cern.ch/mad +
+  + Release   date: 2023.12.04               +
+  + Execution date: 2026.05.20 09:42:38      +
+  ++++++++++++++++++++++++++++++++++++++++++++
+title, "5 TeV electron upright endpoint retarget with MAD-X MATCH";
+
+
+
+beam, particle=electron, energy=5000;
+
+
+
+! Brho = 16678.204759908 T*m
+
+kq001 = -0.00956910706576;
+
+kq002 = 0.0095933586539;
+
+kq009 = 0.00174374943629;
+
+kq010 = 0.000900107305705;
+
+
+
+upright: sequence, l=543.995489;
+
+  mk000: marker, at=0.000000;
+
+  mk001: marker, at=4.000000;
+
+  mk002: marker, at=8.000000;
+
+  mk003: marker, at=12.000000;
+
+  mk004: marker, at=16.000000;
+
+  mk005: marker, at=20.000000;
+
+  mk006: marker, at=24.000000;
+
+  q001: quadrupole, l=4.000000, k1:=kq001, at=29.568000;
+
+  mk008: marker, at=32.000000;
+
+  mk009: marker, at=36.000000;
+
+  mk010: marker, at=40.000000;
+
+  mk011: marker, at=44.000000;
+
+  mk012: marker, at=48.000000;
+
+  mk013: marker, at=52.000000;
+
+  q002: quadrupole, l=4.000000, k1:=kq002, at=54.072400;
+
+  mk015: marker, at=60.000000;
+
+  mk016: marker, at=64.000000;
+
+  mk017: marker, at=68.000000;
+
+  mk018: marker, at=72.000000;
+
+  mk019: marker, at=76.000000;
+
+  mk020: marker, at=80.000000;
+
+  mk021: marker, at=84.000000;
+
+  mk022: marker, at=88.000000;
+
+  mk023: marker, at=92.000000;
+
+  q003: quadrupole, l=4.000000, k1=-0.000447365706736, at=95.140700;
+
+  mk025: marker, at=100.000000;
+
+  mk026: marker, at=104.000000;
+
+  q004: quadrupole, l=4.000000, k1=-0.00428249945246, at=107.141000;
+
+  mk028: marker, at=112.000000;
+
+  mk029: marker, at=116.000000;
+
+  mk030: marker, at=120.000000;
+
+  mk031: marker, at=124.000000;
+
+  mk032: marker, at=128.000000;
+
+  mk033: marker, at=132.000000;
+
+  mk034: marker, at=136.000000;
+
+  mk035: marker, at=140.000000;
+
+  mk036: marker, at=144.000000;
+
+  mk037: marker, at=148.000000;
+
+  mk038: marker, at=152.000000;
+
+  mk039: marker, at=156.000000;
+
+  mk040: marker, at=160.000000;
+
+  mk041: marker, at=164.000000;
+
+  mk042: marker, at=168.000000;
+
+  mk043: marker, at=172.000000;
+
+  q005: quadrupole, l=4.000000, k1=-0.0017878281586, at=177.035000;
+
+  mk045: marker, at=180.000000;
+
+  mk046: marker, at=184.000000;
+
+  mk047: marker, at=188.000000;
+
+  mk048: marker, at=192.000000;
+
+  mk049: marker, at=196.000000;
+
+  mk050: marker, at=200.000000;
+
+  mk051: marker, at=204.000000;
+
+  mk052: marker, at=208.000000;
+
+  mk053: marker, at=212.000000;
+
+  mk054: marker, at=216.000000;
+
+  mk055: marker, at=220.000000;
+
+  mk056: marker, at=224.000000;
+
+  mk057: marker, at=228.000000;
+
+  mk058: marker, at=232.000000;
+
+  mk059: marker, at=236.000000;
+
+  mk060: marker, at=240.000000;
+
+  mk061: marker, at=244.000000;
+
+  mk062: marker, at=248.000000;
+
+  mk063: marker, at=252.000000;
+
+  mk064: marker, at=256.000000;
+
+  mk065: marker, at=260.000000;
+
+  mk066: marker, at=264.000000;
+
+  mk067: marker, at=268.000000;
+
+  mk068: marker, at=272.000000;
+
+  q006: quadrupole, l=4.000000, k1=-0.00510615452971, at=276.750000;
+
+  mk070: marker, at=280.000000;
+
+  mk071: marker, at=284.000000;
+
+  mk072: marker, at=288.000000;
+
+  mk073: marker, at=292.000000;
+
+  mk074: marker, at=296.000000;
+
+  mk075: marker, at=300.000000;
+
+  mk076: marker, at=304.000000;
+
+  mk077: marker, at=308.000000;
+
+  mk078: marker, at=312.000000;
+
+  mk079: marker, at=316.000000;
+
+  mk080: marker, at=320.000000;
+
+  mk081: marker, at=324.000000;
+
+  mk082: marker, at=328.000000;
+
+  q007: quadrupole, l=4.000000, k1=-0.00574208532769, at=330.129000;
+
+  mk084: marker, at=336.000000;
+
+  mk085: marker, at=340.000000;
+
+  q008: quadrupole, l=4.000000, k1=0.00506144560391, at=345.271000;
+
+  mk087: marker, at=348.000000;
+
+  mk088: marker, at=352.000000;
+
+  mk089: marker, at=356.000000;
+
+  mk090: marker, at=360.000000;
+
+  mk091: marker, at=364.000000;
+
+  mk092: marker, at=368.000000;
+
+  mk093: marker, at=372.000000;
+
+  mk094: marker, at=376.000000;
+
+  mk095: marker, at=380.000000;
+
+  mk096: marker, at=384.000000;
+
+  mk097: marker, at=388.000000;
+
+  mk098: marker, at=392.000000;
+
+  mk099: marker, at=396.000000;
+
+  mk100: marker, at=400.000000;
+
+  mk101: marker, at=404.000000;
+
+  mk102: marker, at=408.000000;
+
+  mk103: marker, at=412.000000;
+
+  mk104: marker, at=416.000000;
+
+  q009: quadrupole, l=4.000000, k1:=kq009, at=421.242000;
+
+  mk106: marker, at=424.000000;
+
+  mk107: marker, at=428.000000;
+
+  mk108: marker, at=432.000000;
+
+  mk109: marker, at=436.000000;
+
+  mk110: marker, at=440.000000;
+
+  mk111: marker, at=444.000000;
+
+  mk112: marker, at=448.000000;
+
+  mk113: marker, at=452.000000;
+
+  mk114: marker, at=456.000000;
+
+  mk115: marker, at=460.000000;
+
+  mk116: marker, at=464.000000;
+
+  mk117: marker, at=468.000000;
+
+  mk118: marker, at=472.000000;
+
+  mk119: marker, at=476.000000;
+
+  q010: quadrupole, l=4.000000, k1:=kq010, at=478.920000;
+
+  mk121: marker, at=484.000000;
+
+  mk122: marker, at=488.000000;
+
+  mk123: marker, at=492.000000;
+
+  mk124: marker, at=496.000000;
+
+  mk125: marker, at=500.000000;
+
+  mk126: marker, at=504.000000;
+
+  mk127: marker, at=508.000000;
+
+  mk128: marker, at=512.000000;
+
+  mk129: marker, at=516.000000;
+
+  mk130: marker, at=520.000000;
+
+  mk131: marker, at=524.000000;
+
+  mk132: marker, at=528.000000;
+
+  mk133: marker, at=532.000000;
+
+  mk134: marker, at=536.000000;
+
+  mk135: marker, at=540.000000;
+
+endsequence;
+
+
+
+use, sequence=upright;
+
+
+
+match, sequence=upright,
+
+  betx=0.2351, alfx=0,
+
+  bety=0.2351, alfy=0,
+
+  dx=0, dpx=0,
+
+  dy=0, dpy=0;
+
+START MATCHING
+
+number of sequences: 1
+sequence name: upright
+entry name: betx
+number of entries: 1
+entry value: 0.235100
+entry name: alfx
+number of entries: 1
+entry value: 0.000000
+entry name: bety
+number of entries: 1
+entry value: 0.235100
+entry name: alfy
+number of entries: 1
+entry value: 0.000000
+entry name: dx
+number of entries: 1
+entry value: 0.000000
+entry name: dpx
+number of entries: 1
+entry value: 0.000000
+entry name: dy
+number of entries: 1
+entry value: 0.000000
+entry name: dpy
+number of entries: 1
+entry value: 0.000000
+  vary, name=kq001, step=1.0e-5, lower=-0.009593358656, upper=0.009593358656;
+
+  vary, name=kq002, step=1.0e-5, lower=-0.009593358656, upper=0.009593358656;
+
+  vary, name=kq009, step=1.0e-5, lower=-0.009593358656, upper=0.009593358656;
+
+  vary, name=kq010, step=1.0e-5, lower=-0.009593358656, upper=0.009593358656;
+
+  constraint, range=#e, betx=98.8079838793131;
+
+  constraint, range=#e, bety=26.7759808921862;
+
+  constraint, range=#e, alfx=0;
+
+  constraint, range=#e, alfy=0;
+
+  lmdif, calls=8000, tolerance=1.0e-12;
+
+number of variables:    4
+user given constraints: 1
+total constraints:      4
+
+START LMDIF:
+
+Initial Penalty Function =   0.36413445E+03
+
+
+reset parameter: kq002                   from  0.95949140E-02  to  0.95918033E-02
+reset parameter: kq002                   from  0.95940447E-02  to  0.95926726E-02
+call:       7   Penalty function =   0.71523070E+02
+call:      12   Penalty function =   0.21889922E+00
+call:      17   Penalty function =   0.10223080E+00
+call:      22   Penalty function =   0.37604705E-01
+call:      27   Penalty function =   0.72379024E-02
+call:      32   Penalty function =   0.17870650E-02
+call:      37   Penalty function =   0.39596731E-03
+call:      42   Penalty function =   0.92733342E-04
+call:      47   Penalty function =   0.21160368E-04
+call:      52   Penalty function =   0.48898618E-05
+call:      57   Penalty function =   0.11231892E-05
+call:      62   Penalty function =   0.25874285E-06
+call:      67   Penalty function =   0.59522418E-07
+call:      72   Penalty function =   0.13701949E-07
+call:      77   Penalty function =   0.31531566E-08
+call:      82   Penalty function =   0.72573001E-09
+call:      87   Penalty function =   0.16702185E-09
+call:      92   Penalty function =   0.38440304E-10
+ ++++++++++ LMDIF ended: converged without success
+call:      92   Penalty function =   0.38440304E-10
+endmatch;
+
+
+MATCH SUMMARY
+
+Node_Name                  Constraint   Type  Target Value       Final Value        Penalty
+--------------------------------------------------------------------------------------------------
+upright$end:1              betx         4     9.88079839E+01     9.88079778E+01     3.63628162E-11
+upright$end:1              bety         4     2.67759809E+01     2.67759817E+01     6.52563236E-13
+upright$end:1              alfx         4     0.00000000E+00    -1.19273740E-07     1.42262250E-12
+upright$end:1              alfy         4     0.00000000E+00    -4.79827508E-09     2.30234438E-15
+
+
+Final Penalty Function =   3.84403043e-11
+
+
+
+
+
+Variable                 Final Value  Initial Value Lower Limit  Upper Limit 
+--------------------------------------------------------------------------------
+kq001                    -9.54756e-03 -9.56911e-03 -9.59336e-03  9.59336e-03
+kq002                     9.59068e-03  9.59336e-03 -9.59336e-03  9.59336e-03
+kq009                     1.69381e-03  1.74375e-03 -9.59336e-03  9.59336e-03
+kq010                     6.26650e-04  9.00107e-04 -9.59336e-03  9.59336e-03
+
+END MATCH SUMMARY
+
+VARIABLE "TAR" SET TO   3.84403043e-11
+
+
+value, kq001;
+
+kq001              =    -0.009547562219 ;
+value, kq002;
+
+kq002              =     0.009590681118 ;
+value, kq009;
+
+kq009              =     0.001693806504 ;
+value, kq010;
+
+kq010              =    0.0006266500098 ;
+
+
+twiss,
+
+  betx=0.2351, alfx=0,
+
+  bety=0.2351, alfy=0,
+
+  dx=0, dpx=0,
+
+  dy=0, dpy=0,
+
+  file="/home/keegan/Codex/MadX/upright_endpoint_match_work/match_q001_q002_q009_q010.tfs";
+
+enter Twiss module
+  
+open line - error with deltap:   0.000000E+00
+initial orbit vector:   0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+final orbit vector:     0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+        543.995489                 -0                  0                  0 
+
+                q1                dq1            betxmax              dxmax 
+       0.673998324                  0        27587.88526                  0 
+
+             dxrms             xcomax             xcorms                 q2 
+                 0                  0                  0       0.9729864859 
+
+               dq2            betymax              dymax              dyrms 
+                 0        24535.86506                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips              dqmin 
+                 0                  0                  0                  0 
+
+       dqmin_phase 
+                 0 
+
+
+stop;
+
+
+  Number of warnings: 0
+
+  ++++++++++++++++++++++++++++++++++++++++++++
+  +          MAD-X finished normally         +
+  ++++++++++++++++++++++++++++++++++++++++++++

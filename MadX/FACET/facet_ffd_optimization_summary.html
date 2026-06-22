@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FACET FF/D Local Beta Optimization Summary</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #1f2933;
+      --muted: #5f6f7a;
+      --line: #d6dde3;
+      --panel: #f7f9fb;
+      --accent: #005f73;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: #ffffff;
+      line-height: 1.45;
+    }
+
+    main {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 32px 28px 44px;
+    }
+
+    h1, h2 {
+      margin: 0 0 12px;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: var(--accent);
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 19px;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    .summary {
+      padding: 16px 18px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: 6px;
+      margin: 18px 0 24px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 20px;
+      font-size: 14px;
+    }
+
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      text-align: right;
+      vertical-align: top;
+    }
+
+    th:first-child, td:first-child,
+    th:nth-child(2), td:nth-child(2) {
+      text-align: left;
+    }
+
+    th {
+      background: #eef3f6;
+      font-weight: 700;
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .plots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 18px;
+      margin-top: 12px;
+    }
+
+    figure {
+      margin: 0;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 10px;
+      background: #ffffff;
+    }
+
+    figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    figcaption {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    code {
+      font-family: "DejaVu Sans Mono", Consolas, monospace;
+      font-size: 0.95em;
+      background: #eef3f6;
+      padding: 1px 4px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>FACET FF/D Local Beta Optimization Summary</h1>
+
+    <section class="summary">
+      <p>
+        The most recent optimization started from the untouched original FACET lattice and varied only the final-focus
+        and downstream quadrupole families <code>Q5FF</code> through <code>Q0FF</code> plus <code>Q0D</code>,
+        <code>Q1D</code>, and <code>Q2D</code>. The goal was to make <code>BETX</code> larger at
+        <code>DEX20_11</code> and <code>BETY</code> larger at <code>DEX20_10</code>, while keeping the final endpoint
+        beta functions reasonably close to the original optics.
+      </p>
+      <p>
+        The optimized lattice was written separately as <code>facet_ffd_local_beta_corrected.madx</code>. The original
+        source lattice <code>flatGoldenLattice_line4_stub_10gev.madx</code> was not modified.
+      </p>
+    </section>
+
+    <h2>Optimization Approach</h2>
+    <p>
+      A sensitivity scan showed that the upstream FF quadrupoles can strongly increase the local beta functions at the
+      two requested diagnostic locations, but they also perturb the endpoint beta functions. The final solution used the
+      FF quadrupoles to raise the local beta values, then used the downstream <code>Q0D</code>, <code>Q1D</code>, and
+      <code>Q2D</code> strengths to pull the endpoint beta values back close to the baseline.
+    </p>
+    <p>
+      Polarity flips were allowed, and all gradients were constrained by the requested absolute maximum field gradients.
+      MAD-X finished normally for the optimized deck with zero warnings.
+    </p>
+
+    <h2>Optics Result</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Location</th>
+          <th>Quantity</th>
+          <th>Original</th>
+          <th>Optimized</th>
+          <th>Change</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>DEX20_11</code></td>
+          <td><code>BETX</code></td>
+          <td>0.505953 m</td>
+          <td>1.588902 m</td>
+          <td>+1.082949 m</td>
+        </tr>
+        <tr>
+          <td><code>DEX20_10</code></td>
+          <td><code>BETY</code></td>
+          <td>0.493554 m</td>
+          <td>1.979472 m</td>
+          <td>+1.485918 m</td>
+        </tr>
+        <tr>
+          <td><code>LAT$END</code></td>
+          <td><code>BETX</code></td>
+          <td>39.037563 m</td>
+          <td>39.831603 m</td>
+          <td>+0.794040 m</td>
+        </tr>
+        <tr>
+          <td><code>LAT$END</code></td>
+          <td><code>BETY</code></td>
+          <td>2.915517 m</td>
+          <td>3.089825 m</td>
+          <td>+0.174308 m</td>
+        </tr>
+        <tr>
+          <td><code>LAT$END</code></td>
+          <td><code>ALFX</code></td>
+          <td>-3.803267</td>
+          <td>-2.225680</td>
+          <td>+1.577587</td>
+        </tr>
+        <tr>
+          <td><code>LAT$END</code></td>
+          <td><code>ALFY</code></td>
+          <td>0.019984</td>
+          <td>-0.159814</td>
+          <td>-0.179798</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Final Quadrupole Gradients</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Family</th>
+          <th>Requested |Bmax|</th>
+          <th>Original Gradient</th>
+          <th>Optimized Gradient</th>
+          <th>Within Limit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><code>Q5FF</code></td><td>55.5435 T/m</td><td>-15.588683 T/m</td><td>-11.579664 T/m</td><td>Yes</td></tr>
+        <tr><td><code>Q4FF</code></td><td>62.4475 T/m</td><td>-11.378285 T/m</td><td>-13.447085 T/m</td><td>Yes</td></tr>
+        <tr><td><code>Q3FF</code></td><td>63.9877 T/m</td><td>13.895341 T/m</td><td>14.753656 T/m</td><td>Yes</td></tr>
+        <tr><td><code>Q2FF</code></td><td>23.3828 T/m</td><td>17.693891 T/m</td><td>16.109460 T/m</td><td>Yes</td></tr>
+        <tr><td><code>Q1FF</code></td><td>35.9843 T/m</td><td>-32.939625 T/m</td><td>-31.445191 T/m</td><td>Yes</td></tr>
+        <tr><td><code>Q0FF</code></td><td>23.3828 T/m</td><td>17.694311 T/m</td><td>17.450307 T/m</td><td>Yes</td></tr>
+        <tr><td><code>Q0D</code></td><td>23.9000 T/m</td><td>-10.971116 T/m</td><td>0.843986 T/m</td><td>Yes</td></tr>
+        <tr><td><code>Q1D</code></td><td>38.6000 T/m</td><td>18.089030 T/m</td><td>15.617535 T/m</td><td>Yes</td></tr>
+        <tr><td><code>Q2D</code></td><td>22.3000 T/m</td><td>-10.971116 T/m</td><td>-11.728036 T/m</td><td>Yes</td></tr>
+      </tbody>
+    </table>
+    <p class="note">
+      The signs above are the final gradient polarities used in MAD-X. The constraints were applied as absolute gradient
+      limits because polarity reversal was allowed.
+    </p>
+
+    <h2>Generated Files</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>File</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>facet_ffd_local_beta_corrected.madx</code></td>
+          <td>Optimized MAD-X lattice deck.</td>
+        </tr>
+        <tr>
+          <td><code>facet_ffd_local_beta_corrected_twiss.tfs</code></td>
+          <td>TWISS output for the optimized lattice.</td>
+        </tr>
+        <tr>
+          <td><code>facet_ffd_local_beta_corrected_plot.png</code></td>
+          <td>Optimized lattice plot with survey, beta, alpha, endpoint values, and quadrupole gradients.</td>
+        </tr>
+        <tr>
+          <td><code>facet_original_ffd_comparison_plot.png</code></td>
+          <td>Original lattice plot using the same plotting format for direct comparison.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Plots</h2>
+    <div class="plots">
+      <figure>
+        <img src="facet_original_ffd_comparison_plot.png" alt="Original FACET lattice optics plot">
+        <figcaption>Original lattice, regenerated from the untouched source deck.</figcaption>
+      </figure>
+      <figure>
+        <img src="facet_ffd_local_beta_corrected_plot.png" alt="Optimized FACET FF/D lattice optics plot">
+        <figcaption>Optimized FF/D solution with larger local beta values at the requested markers.</figcaption>
+      </figure>
+    </div>
+  </main>
+</body>
+</html>

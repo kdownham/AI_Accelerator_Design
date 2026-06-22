@@ -1,0 +1,220 @@
+
+  ++++++++++++++++++++++++++++++++++++++++++++
+  +     MAD-X 5.09.01  (64 bit, Linux)       +
+  + Support: mad@cern.ch, http://cern.ch/mad +
+  + Release   date: 2023.12.04               +
+  + Execution date: 2026.05.11 10:31:18      +
+  ++++++++++++++++++++++++++++++++++++++++++++
+title, "5 TeV electron upright-quadrupole position-optimized transformer";
+
+
+
+beam, particle=electron, energy=5000;
+
+
+
+! Brho = 16678.204759908 T*m
+
+upright: sequence, l=360.000000;
+
+  mk000: marker, at=0.000000;
+
+  mk001: marker, at=4.000000;
+
+  mk002: marker, at=8.000000;
+
+  mk003: marker, at=12.000000;
+
+  mk004: marker, at=16.000000;
+
+  mk005: marker, at=20.000000;
+
+  mk006: marker, at=24.000000;
+
+  mk007: marker, at=28.000000;
+
+  mk008: marker, at=32.000000;
+
+  mk009: marker, at=36.000000;
+
+  mk010: marker, at=40.000000;
+
+  mk011: marker, at=44.000000;
+
+  mk012: marker, at=48.000000;
+
+  mk013: marker, at=52.000000;
+
+  mk014: marker, at=56.000000;
+
+  mk015: marker, at=60.000000;
+
+  mk016: marker, at=64.000000;
+
+  mk017: marker, at=68.000000;
+
+  mk018: marker, at=72.000000;
+
+  mk019: marker, at=76.000000;
+
+  mk020: marker, at=80.000000;
+
+  mk021: marker, at=84.000000;
+
+  q001: quadrupole, l=4.000000, k1=-0.0064869092062, at=86.000000;
+
+  mk022: marker, at=88.000000;
+
+  mk023: marker, at=92.000000;
+
+  mk024: marker, at=96.000000;
+
+  mk025: marker, at=100.000000;
+
+  mk026: marker, at=104.000000;
+
+  mk027: marker, at=108.000000;
+
+  mk028: marker, at=112.000000;
+
+  mk029: marker, at=116.000000;
+
+  mk030: marker, at=120.000000;
+
+  mk031: marker, at=124.000000;
+
+  mk032: marker, at=128.000000;
+
+  mk033: marker, at=132.000000;
+
+  mk034: marker, at=136.000000;
+
+  mk035: marker, at=140.000000;
+
+  mk036: marker, at=144.000000;
+
+  mk037: marker, at=148.000000;
+
+  q002: quadrupole, l=4.000000, k1=0.005123620991, at=150.000000;
+
+  mk038: marker, at=152.000000;
+
+  mk039: marker, at=156.000000;
+
+  mk040: marker, at=160.000000;
+
+  mk041: marker, at=164.000000;
+
+  mk042: marker, at=168.000000;
+
+  mk043: marker, at=172.000000;
+
+  mk044: marker, at=176.000000;
+
+  mk045: marker, at=180.000000;
+
+  mk046: marker, at=184.000000;
+
+  mk047: marker, at=188.000000;
+
+  mk048: marker, at=192.000000;
+
+  mk049: marker, at=196.000000;
+
+  mk050: marker, at=200.000000;
+
+  mk051: marker, at=204.000000;
+
+  mk052: marker, at=208.000000;
+
+  q003: quadrupole, l=4.000000, k1=-0.00459454726112, at=210.000000;
+
+  mk053: marker, at=212.000000;
+
+  mk054: marker, at=216.000000;
+
+  mk055: marker, at=220.000000;
+
+  mk056: marker, at=224.000000;
+
+  mk057: marker, at=228.000000;
+
+  mk058: marker, at=232.000000;
+
+  mk059: marker, at=236.000000;
+
+  mk060: marker, at=240.000000;
+
+  mk061: marker, at=244.000000;
+
+  mk062: marker, at=248.000000;
+
+  mk063: marker, at=252.000000;
+
+  mk064: marker, at=256.000000;
+
+  mk065: marker, at=260.000000;
+
+  mk066: marker, at=264.000000;
+
+  mk067: marker, at=268.000000;
+
+  mk068: marker, at=272.000000;
+
+  q004: quadrupole, l=4.000000, k1=0.00308458258791, at=274.000000;
+
+  mk069: marker, at=276.000000;
+
+  mk070: marker, at=280.000000;
+
+  mk071: marker, at=284.000000;
+
+  mk072: marker, at=288.000000;
+
+  mk073: marker, at=292.000000;
+
+  mk074: marker, at=296.000000;
+
+  mk075: marker, at=300.000000;
+
+  mk076: marker, at=304.000000;
+
+  mk077: marker, at=308.000000;
+
+  mk078: marker, at=312.000000;
+
+  mk079: marker, at=316.000000;
+
+  mk080: marker, at=320.000000;
+
+  q005: quadrupole, l=4.000000, k1=-0.00197427124046, at=322.167011;
+
+  mk081: marker, at=324.000000;
+
+  mk082: marker, at=328.000000;
+
+  mk083: marker, at=332.000000;
+
+  mk084: marker, at=336.000000;
+
+  q006: quadrupole, l=4.000000, k1=-0.00339780574803, at=338.000000;
+
+  mk085: marker, at=340.000000;
+
+  mk086: marker, at=344.000000;
+
+  mk087: marker, at=348.000000;
+
+  mk088: marker, at=352.000000;
+
+  mk089: marker, at=356.000000;
+
+  mk090: marker, at=360.000000;
+
+endsequence;
+
+
+
+use, sequence=upright;
+
++=+=+= fatal: negative drift between elements  q005:1 and mk081:1, length -1.670110e-01

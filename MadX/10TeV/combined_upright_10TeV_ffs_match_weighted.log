@@ -1,0 +1,1932 @@
+
+  ++++++++++++++++++++++++++++++++++++++++++++
+  +     MAD-X 5.09.01  (64 bit, Linux)       +
+  + Support: mad@cern.ch, http://cern.ch/mad +
+  + Release   date: 2023.12.04               +
+  + Execution date: 2026.05.20 16:15:14      +
+  ++++++++++++++++++++++++++++++++++++++++++++
+! Combined upright endpoint transformer + 10 TeV BDS lattice.
+
+! Source lattices are inlined without changing element definitions.
+
+
+
+title, "5 TeV electron upright endpoint retarget with MAD-X MATCH";
+
+
+
+beam, particle=electron, energy=5000;
+
+
+
+! Brho = 16678.204759908 T*m
+
+kq005 = -0.0017878281586;
+
+kq006 = -0.00510615452971;
+
+kq008 = 0.00506144560391;
+
+kq010 = 0.000900107305705;
+
+
+
+upright: sequence, l=543.995489;
+
+  mk000: marker, at=0.000000;
+
+  mk001: marker, at=4.000000;
+
+  mk002: marker, at=8.000000;
+
+  mk003: marker, at=12.000000;
+
+  mk004: marker, at=16.000000;
+
+  mk005: marker, at=20.000000;
+
+  mk006: marker, at=24.000000;
+
+  q001: quadrupole, l=4.000000, k1=-0.00956910706576, at=29.568000;
+
+  mk008: marker, at=32.000000;
+
+  mk009: marker, at=36.000000;
+
+  mk010: marker, at=40.000000;
+
+  mk011: marker, at=44.000000;
+
+  mk012: marker, at=48.000000;
+
+  mk013: marker, at=52.000000;
+
+  q002: quadrupole, l=4.000000, k1=0.0095933586539, at=54.072400;
+
+  mk015: marker, at=60.000000;
+
+  mk016: marker, at=64.000000;
+
+  mk017: marker, at=68.000000;
+
+  mk018: marker, at=72.000000;
+
+  mk019: marker, at=76.000000;
+
+  mk020: marker, at=80.000000;
+
+  mk021: marker, at=84.000000;
+
+  mk022: marker, at=88.000000;
+
+  mk023: marker, at=92.000000;
+
+  q003: quadrupole, l=4.000000, k1=-0.000447365706736, at=95.140700;
+
+  mk025: marker, at=100.000000;
+
+  mk026: marker, at=104.000000;
+
+  q004: quadrupole, l=4.000000, k1=-0.00428249945246, at=107.141000;
+
+  mk028: marker, at=112.000000;
+
+  mk029: marker, at=116.000000;
+
+  mk030: marker, at=120.000000;
+
+  mk031: marker, at=124.000000;
+
+  mk032: marker, at=128.000000;
+
+  mk033: marker, at=132.000000;
+
+  mk034: marker, at=136.000000;
+
+  mk035: marker, at=140.000000;
+
+  mk036: marker, at=144.000000;
+
+  mk037: marker, at=148.000000;
+
+  mk038: marker, at=152.000000;
+
+  mk039: marker, at=156.000000;
+
+  mk040: marker, at=160.000000;
+
+  mk041: marker, at=164.000000;
+
+  mk042: marker, at=168.000000;
+
+  mk043: marker, at=172.000000;
+
+  q005: quadrupole, l=4.000000, k1:=kq005, at=177.035000;
+
+  mk045: marker, at=180.000000;
+
+  mk046: marker, at=184.000000;
+
+  mk047: marker, at=188.000000;
+
+  mk048: marker, at=192.000000;
+
+  mk049: marker, at=196.000000;
+
+  mk050: marker, at=200.000000;
+
+  mk051: marker, at=204.000000;
+
+  mk052: marker, at=208.000000;
+
+  mk053: marker, at=212.000000;
+
+  mk054: marker, at=216.000000;
+
+  mk055: marker, at=220.000000;
+
+  mk056: marker, at=224.000000;
+
+  mk057: marker, at=228.000000;
+
+  mk058: marker, at=232.000000;
+
+  mk059: marker, at=236.000000;
+
+  mk060: marker, at=240.000000;
+
+  mk061: marker, at=244.000000;
+
+  mk062: marker, at=248.000000;
+
+  mk063: marker, at=252.000000;
+
+  mk064: marker, at=256.000000;
+
+  mk065: marker, at=260.000000;
+
+  mk066: marker, at=264.000000;
+
+  mk067: marker, at=268.000000;
+
+  mk068: marker, at=272.000000;
+
+  q006: quadrupole, l=4.000000, k1:=kq006, at=276.750000;
+
+  mk070: marker, at=280.000000;
+
+  mk071: marker, at=284.000000;
+
+  mk072: marker, at=288.000000;
+
+  mk073: marker, at=292.000000;
+
+  mk074: marker, at=296.000000;
+
+  mk075: marker, at=300.000000;
+
+  mk076: marker, at=304.000000;
+
+  mk077: marker, at=308.000000;
+
+  mk078: marker, at=312.000000;
+
+  mk079: marker, at=316.000000;
+
+  mk080: marker, at=320.000000;
+
+  mk081: marker, at=324.000000;
+
+  mk082: marker, at=328.000000;
+
+  q007: quadrupole, l=4.000000, k1=-0.00574208532769, at=330.129000;
+
+  mk084: marker, at=336.000000;
+
+  mk085: marker, at=340.000000;
+
+  q008: quadrupole, l=4.000000, k1:=kq008, at=345.271000;
+
+  mk087: marker, at=348.000000;
+
+  mk088: marker, at=352.000000;
+
+  mk089: marker, at=356.000000;
+
+  mk090: marker, at=360.000000;
+
+  mk091: marker, at=364.000000;
+
+  mk092: marker, at=368.000000;
+
+  mk093: marker, at=372.000000;
+
+  mk094: marker, at=376.000000;
+
+  mk095: marker, at=380.000000;
+
+  mk096: marker, at=384.000000;
+
+  mk097: marker, at=388.000000;
+
+  mk098: marker, at=392.000000;
+
+  mk099: marker, at=396.000000;
+
+  mk100: marker, at=400.000000;
+
+  mk101: marker, at=404.000000;
+
+  mk102: marker, at=408.000000;
+
+  mk103: marker, at=412.000000;
+
+  mk104: marker, at=416.000000;
+
+  q009: quadrupole, l=4.000000, k1=0.00174374943629, at=421.242000;
+
+  mk106: marker, at=424.000000;
+
+  mk107: marker, at=428.000000;
+
+  mk108: marker, at=432.000000;
+
+  mk109: marker, at=436.000000;
+
+  mk110: marker, at=440.000000;
+
+  mk111: marker, at=444.000000;
+
+  mk112: marker, at=448.000000;
+
+  mk113: marker, at=452.000000;
+
+  mk114: marker, at=456.000000;
+
+  mk115: marker, at=460.000000;
+
+  mk116: marker, at=464.000000;
+
+  mk117: marker, at=468.000000;
+
+  mk118: marker, at=472.000000;
+
+  mk119: marker, at=476.000000;
+
+  q010: quadrupole, l=4.000000, k1:=kq010, at=478.920000;
+
+  mk121: marker, at=484.000000;
+
+  mk122: marker, at=488.000000;
+
+  mk123: marker, at=492.000000;
+
+  mk124: marker, at=496.000000;
+
+  mk125: marker, at=500.000000;
+
+  mk126: marker, at=504.000000;
+
+  mk127: marker, at=508.000000;
+
+  mk128: marker, at=512.000000;
+
+  mk129: marker, at=516.000000;
+
+  mk130: marker, at=520.000000;
+
+  mk131: marker, at=524.000000;
+
+  mk132: marker, at=528.000000;
+
+  mk133: marker, at=532.000000;
+
+  mk134: marker, at=536.000000;
+
+  mk135: marker, at=540.000000;
+
+endsequence;
+
+
+
+use, sequence=upright;
+
+
+
+match, sequence=upright,
+
+  betx=0.2351, alfx=0,
+
+  bety=0.2351, alfy=0,
+
+  dx=0, dpx=0,
+
+  dy=0, dpy=0;
+
+START MATCHING
+
+number of sequences: 1
+sequence name: upright
+entry name: betx
+number of entries: 1
+entry value: 0.235100
+entry name: alfx
+number of entries: 1
+entry value: 0.000000
+entry name: bety
+number of entries: 1
+entry value: 0.235100
+entry name: alfy
+number of entries: 1
+entry value: 0.000000
+entry name: dx
+number of entries: 1
+entry value: 0.000000
+entry name: dpx
+number of entries: 1
+entry value: 0.000000
+entry name: dy
+number of entries: 1
+entry value: 0.000000
+entry name: dpy
+number of entries: 1
+entry value: 0.000000
+  vary, name=kq005, step=1.0e-5, lower=-0.009593358656, upper=0.009593358656;
+
+  vary, name=kq006, step=1.0e-5, lower=-0.009593358656, upper=0.009593358656;
+
+  vary, name=kq008, step=1.0e-5, lower=-0.009593358656, upper=0.009593358656;
+
+  vary, name=kq010, step=1.0e-5, lower=-0.009593358656, upper=0.009593358656;
+
+  constraint, range=#e, betx=98.8079838793131;
+
+  constraint, range=#e, bety=26.7759808921862;
+
+  constraint, range=#e, alfx=0;
+
+  constraint, range=#e, alfy=0;
+
+  lmdif, calls=8000, tolerance=1.0e-12;
+
+number of variables:    4
+user given constraints: 1
+total constraints:      4
+
+START LMDIF:
+
+Initial Penalty Function =   0.36413445E+03
+
+
+call:       6   Penalty function =   0.64537900E+01
+call:      11   Penalty function =   0.12170468E-01
+call:      16   Penalty function =   0.91830478E-05
+call:      21   Penalty function =   0.55466258E-07
+call:      26   Penalty function =   0.30322262E-09
+call:      31   Penalty function =   0.16667194E-11
+call:      36   Penalty function =   0.91572507E-14
+ ++++++++++ LMDIF ended: converged successfully
+call:      36   Penalty function =   0.91572507E-14
+endmatch;
+
+
+MATCH SUMMARY
+
+Node_Name                  Constraint   Type  Target Value       Final Value        Penalty
+--------------------------------------------------------------------------------------------------
+upright$end:1              betx         4     9.88079839E+01     9.88079839E+01     5.80504043E-18
+upright$end:1              bety         4     2.67759809E+01     2.67759810E+01     9.13178980E-15
+upright$end:1              alfx         4     0.00000000E+00    -2.01400691E-11     4.05622385E-20
+upright$end:1              alfy         4     0.00000000E+00    -4.42891864E-10     1.96153203E-17
+
+
+Final Penalty Function =   9.15725072e-15
+
+
+
+
+
+Variable                 Final Value  Initial Value Lower Limit  Upper Limit 
+--------------------------------------------------------------------------------
+kq005                    -1.77942e-03 -1.78783e-03 -9.59336e-03  9.59336e-03
+kq006                    -5.07741e-03 -5.10615e-03 -9.59336e-03  9.59336e-03
+kq008                     5.01414e-03  5.06145e-03 -9.59336e-03  9.59336e-03
+kq010                     5.90523e-04  9.00107e-04 -9.59336e-03  9.59336e-03
+
+END MATCH SUMMARY
+
+VARIABLE "TAR" SET TO   9.15725072e-15
+
+
+value, kq005;
+
+kq005              =    -0.001779424668 ;
+value, kq006;
+
+kq006              =    -0.005077411003 ;
+value, kq008;
+
+kq008              =     0.005014140158 ;
+value, kq010;
+
+kq010              =     0.000590522589 ;
+
+
+! ---- BEGIN INLINED 10 TeV BDS DEFINITIONS ----
+
+! ---- BEGIN INLINED ffs_10TeV_updated.madx ----
+
+E0 := 5000.0;
+
+BETX := 83.33788119642129;
+
+BETY := 22.5837369299653;
+
+BEAM, PARTICLE=ELECTRON, ENERGY=E0;
+
+
+
+SCALING := (5000.0/3500.0)^(1/3);
+
+
+
+! -- DRIFTS -- 
+
+L_D0 := 6;
+
+L_D00 := 0.029751103194;
+
+!L_D11 := 0.426337493987;
+
+!L_D1_DEC0_LX03 := 5.54620672472;
+
+L_D2OD := 20.8276253632;
+
+L_D3 := 4.41715842555;
+
+L_D4ODSF5_OCTDRIFT := 15.1475811943;
+
+L_D5OD := 43.6239562672;
+
+L_D5ODT := 17.3004665229;
+
+L_D6 := 49.380467151;
+
+L_D7 := 44.5284;
+
+L_D8 := 12.8016;
+
+L_D_OCT1 := 0;
+
+L_D_OCT1_DEC2 := 36.0795809009;
+
+L_D_OCT2_DEC1 := 0.398122172087;
+
+L_D_OCTF1 := 0;
+
+L_LMD4 := 9.75656061015;
+
+L_LMD5 := 5.94281472775;
+
+L_LMD6 := 10.08;
+
+L_LMD7 := 10.08;
+
+L_LMD8 := 9.66644;
+
+L_LX0 := 0.42672;
+
+L_LX01 := 0.21336;
+
+L_LX02 := 0.21336;
+
+L_LX0SD4A := 0.425545453928;
+
+L_LX0SD4B := 0.427894546072;
+
+L_LX0SF5 := 0.424191167293;
+
+L_LX0SF6 := 0.426291249037;
+
+L_OCTDRIFT2 := 1.29989187706;
+
+L_OCTDRIFT3 := 2.00038250601;
+
+
+
+LMD4: DRIFT, L=L_LMD4*SCALING;
+
+LMD5: DRIFT, L=L_LMD5*SCALING;
+
+LMD6: DRIFT, L=L_LMD6*SCALING;
+
+LMD7: DRIFT, L=L_LMD7*SCALING;
+
+LMD8: DRIFT, L=L_LMD8*SCALING;
+
+D8: DRIFT, L=L_D8*SCALING;
+
+LX0: DRIFT, L=L_LX0*SCALING;
+
+D7: DRIFT, L=L_D7*SCALING;
+
+D6: DRIFT, L=L_D6*SCALING;
+
+LX0SF6: DRIFT, L=L_LX0SF6*SCALING;
+
+D5OD: DRIFT, L=L_D5OD*SCALING;
+
+OCTDRIFT2: DRIFT, L=L_OCTDRIFT2*SCALING;
+
+D5ODT: DRIFT, L=L_D5ODT*SCALING;
+
+LX01: DRIFT, L=L_LX01*SCALING;
+
+LX02: DRIFT, L=L_LX02*SCALING;
+
+LX0SF5: DRIFT, L=L_LX0SF5*SCALING;
+
+D4ODSF5_OCTDRIFT: DRIFT, L=L_D4ODSF5_OCTDRIFT*SCALING;
+
+D_OCT1: DRIFT, L=L_D_OCT1*SCALING;
+
+LX0SD4A: DRIFT, L=L_LX0SD4A*SCALING;
+
+LX0SD4B: DRIFT, L=L_LX0SD4B*SCALING;
+
+D3: DRIFT, L=L_D3*SCALING;
+
+D_OCT1_DEC2: DRIFT, L=L_D_OCT1_DEC2*SCALING;
+
+D2OD: DRIFT, L=L_D2OD*SCALING;
+
+OCTDRIFT3: DRIFT, L=L_OCTDRIFT3*SCALING;
+
+D11: DRIFT, L:=L_D11*SCALING;
+
+D_OCTF1: DRIFT, L=L_D_OCTF1*SCALING;
+
+D1_DEC0_LX03: DRIFT, L:=L_D1_DEC0_LX03*SCALING;
+
+D00: DRIFT, L=L_D00*SCALING;
+
+D_OCT2_DEC1: DRIFT, L=L_D_OCT2_DEC1*SCALING;
+
+D0: DRIFT, L=L_D0*SCALING;
+
+
+
+! -- DIPOLES --
+
+AP_SFFB4 := 0.003;
+
+AP_SFFB3 := 0.00364;
+
+AP_SFFB3B := 0.00324;
+
+AP_SFFB2 := 0.00351;
+
+AP_SFFB1 := 0.00349;
+
+AP_SFFSB1 := 0.0033;
+
+AP_SFFSB1A := 0.00383;
+
+AP_SFFSB1B := 0.00436;
+
+
+
+L_SFFB4 := 2.944340; 
+
+L_SFFB3 := 12.588240; 
+
+L_SFFB3B := 2.560320;
+
+L_SFFB2 := 2.560320; 
+
+L_SFFB1 := 2.560320; 
+
+L_SFFSB1 := 2.560320; 
+
+L_SFFSB1A := 2.560320; 
+
+L_SFFSB1B := 2.560320; 
+
+
+
+ANGLE_SFFB4 := 4.7382825000000001e-07;
+
+ANGLE_SFFB3 := -6.7529524999999996e-06;
+
+ANGLE_SFFB3B := -1.3642457499999999e-06;
+
+ANGLE_SFFB2 := -1.3732690616113424e-06;
+
+ANGLE_SFFB1 := -4.1649999999999995e-07;
+
+ANGLE_SFFSB1 := -4.1256598651077849e-07;
+
+ANGLE_SFFSB1A := -4.1256598651077849e-07;
+
+ANGLE_SFFSB1B := -4.1256598651077849e-07;
+
+
+
+SFFB4: SBEND, L:=L_SFFB4*SCALING, ANGLE:=ANGLE_SFFB4*BENDING_FACTOR/SCALING, APERTURE:=AP_SFFB4; 
+
+SFFB3: SBEND, L:=L_SFFB3*SCALING, ANGLE:=ANGLE_SFFB3*BENDING_FACTOR/SCALING, APERTURE:=AP_SFFB3; 
+
+SFFB3B: SBEND, L:=L_SFFB3B*SCALING, ANGLE:=ANGLE_SFFB3B*BENDING_FACTOR/SCALING, APERTURE:=AP_SFFB3B; 
+
+SFFB2: SBEND, L:=L_SFFB2*SCALING, ANGLE:=ANGLE_SFFB2*BENDING_FACTOR/SCALING, APERTURE:=AP_SFFB2; 
+
+SFFB1: SBEND, L:=L_SFFB1*SCALING, ANGLE:=ANGLE_SFFB1*BENDING_FACTOR/SCALING, APERTURE:=AP_SFFB1; 
+
+SFFSB1: SBEND, L:=L_SFFSB1*SCALING, ANGLE:=ANGLE_SFFSB1*BENDING_FACTOR/SCALING, APERTURE:=AP_SFFSB1; 
+
+SFFSB1A: SBEND, L:=L_SFFSB1A*SCALING, ANGLE:=ANGLE_SFFSB1A*BENDING_FACTOR/SCALING, APERTURE:=AP_SFFB1A; 
+
+SFFSB1B: SBEND, L:=L_SFFSB1B*SCALING, ANGLE:=ANGLE_SFFSB1B*BENDING_FACTOR/SCALING, APERTURE:=AP_SFFB1B; 
+
+
+
+FFB4: LINE:=(5*(SFFB4));
+
+FFB3: LINE:=(5*(SFFB3));
+
+FFB3B: LINE:=(5*(SFFB3B));
+
+FFB2: LINE:=(5*(SFFB2));
+
+FFB1: LINE:=(5*(SFFB1));
+
+FFSB1: LINE:=(5*(SFFSB1));
+
+FFSB1A: LINE:=(5*(SFFSB1A));
+
+FFSB1B: LINE:=(5*(SFFSB1B));
+
+
+
+! -- QUADRUPOLES --
+
+AP_MATCHING_FFS = 0.008;
+
+AP_QF8 := 0.003;
+
+AP_QD7 := 0.003;
+
+AP_QD6C := 0.003;
+
+AP_QD6B := 0.003;
+
+AP_QF5B := 0.0033;
+
+AP_QF5A := 0.005;
+
+AP_QD4B := 0.005;
+
+AP_QD4A := 0.005;
+
+AP_QF3B := 0.002;
+
+AP_QF3A := 0.002;
+
+AP_QD2 := 0.002;
+
+AP_QF1 := 0.0056;
+
+AP_QD0 := 0.0052;
+
+
+
+L_QMD11 := 2.800000;
+
+L_QMD12 := 2.800000;
+
+L_QMD13 := 2.800000;
+
+L_QMD14 := 2.800000;
+
+L_QF8 := 2.773680;
+
+L_QD7 := 2.773680;
+
+L_QD6C := 2.773680;
+
+L_QD6B := 2.773680;
+
+L_QF5B := 2.773680;
+
+L_QF5A := 2.773680;
+
+L_QD4B := 2.773680;
+
+L_QD4A := 2.773680;
+
+L_QF3B := 2.773680;
+
+L_QF3A := 2.773680;
+
+L_QD2 := 2.773680;
+
+!L_QF1 := 5.5942992;
+
+L_QD0 := 4.693920;
+
+
+
+K1_QMD11 := -116.859708 / (E0 * L_QMD11);
+
+K1_QMD12 := -119.781104 / (E0 * L_QMD12);
+
+K1_QMD13 := 376.553831 / (E0 * L_QMD13);
+
+K1_QMD14 := -344.879674 / (E0 * L_QMD14);
+
+K1_QF8 := 521.586541 / (E0 * L_QF8);
+
+K1_QD7 := -185.384935 / (E0 * L_QD7);
+
+K1_QD6C := -25.805593 / (E0 * L_QD6C);
+
+K1_QD6B := -286.947254 / (E0 * L_QD6B);
+
+K1_QF5B := 91.985415 / (E0 * L_QF5B);
+
+K1_QF5A := 82.559688 / (E0 * L_QF5A);
+
+K1_QD4B := -54.296788 / (E0 * L_QD4B);
+
+K1_QD4A := -54.918506 / (E0 * L_QD4A);
+
+K1_QF3B := 13.228050 / (E0 * L_QF3B);
+
+K1_QF3A := 54.953758 / (E0 * L_QF3A);
+
+K1_QD2 := -65.194672 / (E0 * L_QD2);
+
+!K1_QF1 := 268.615307 / (E0 * L_QF1);
+
+K1_QD0 := -648.313814 / (E0 * L_QD0);
+
+
+
+QMD11: QUADRUPOLE, L:=L_QMD11*SCALING, K1:=K1_QMD11/(SCALING*SCALING), APERTURE:=AP_MATCHING_FFS;
+
+QMD12: QUADRUPOLE, L:=L_QMD12*SCALING, K1:=K1_QMD12/(SCALING*SCALING), APERTURE:=AP_MATCHING_FFS;
+
+QMD13: QUADRUPOLE, L:=L_QMD13*SCALING, K1:=K1_QMD13/(SCALING*SCALING), APERTURE:=AP_MATCHING_FFS;
+
+QMD14: QUADRUPOLE, L:=L_QMD14*SCALING, K1:=K1_QMD14/(SCALING*SCALING), APERTURE:=AP_MATCHING_FFS;
+
+QF8: QUADRUPOLE, L:=L_QF8*SCALING, K1:=K1_QF8/(SCALING*SCALING), APERTURE:=AP_QF8;
+
+QD7: QUADRUPOLE, L:=L_QD7*SCALING, K1:=K1_QD7/(SCALING*SCALING), APERTURE:=AP_QD7;
+
+QD6C: QUADRUPOLE, L:=L_QD6C*SCALING, K1:=K1_QD6C/(SCALING*SCALING), APERTURE:=AP_QD6C;
+
+QD6B: QUADRUPOLE, L:=L_QD6B*SCALING, K1:=K1_QD6B/(SCALING*SCALING), APERTURE:=AP_QF6B;
+
+QF5B: QUADRUPOLE, L:=L_QF5B*SCALING, K1:=K1_QF5B/(SCALING*SCALING), APERTURE:=AP_QF5B;
+
+QF5A: QUADRUPOLE, L:=L_QF5A*SCALING, K1:=K1_QF5A/(SCALING*SCALING), APERTURE:=AP_QF5A;
+
+QD4B: QUADRUPOLE, L:=L_QD4B*SCALING, K1:=K1_QD4B/(SCALING*SCALING), APERTURE:=AP_QD4B;
+
+QD4A: QUADRUPOLE, L:=L_QD4A*SCALING, K1:=K1_QD4A/(SCALING*SCALING), APERTURE:=AP_QD4A;
+
+QF3B: QUADRUPOLE, L:=L_QF3B*SCALING, K1:=K1_QF3B/(SCALING*SCALING), APERTURE:=AP_QF3B;
+
+QF3A: QUADRUPOLE, L:=L_QF3A*SCALING, K1:=K1_QF3A/(SCALING*SCALING), APERTURE:=AP_QF3A;
+
+QD2: QUADRUPOLE, L:=L_QD2*SCALING, K1:=K1_QD2/(SCALING*SCALING), APERTURE:=AP_QD2;
+
+
+
+QF1_ENTRANCE: QUADRUPOLE, L:=L_QF1*SCALING/3.0, K1:=K1_QF1/(QF1_SCALE*SCALING*SCALING), APERTURE:=AP_QF1;
+
+QD0_ENTRANCE: QUADRUPOLE, L:=L_QD0*SCALING/3.0, K1:=K1_QD0/(SCALING*SCALING), APERTURE:=AP_QD0;
+
+
+
+QF1: QUADRUPOLE, L:=L_QF1*SCALING/3.0, K1:=K1_QF1/(QF1_SCALE*SCALING*SCALING), APERTURE:=AP_QF1;
+
+QD0: QUADRUPOLE, L:=L_QD0*SCALING/3.0, K1:=K1_QD0/(SCALING*SCALING), APERTURE:=AP_QD0;
+
+
+
+QF1_EXIT: QUADRUPOLE, L:=L_QF1*SCALING/3.0, K1:=K1_QF1/(QF1_SCALE*SCALING*SCALING), APERTURE:=AP_QF1;
+
+QD0_EXIT: QUADRUPOLE, L:=L_QD0*SCALING/3.0, K1:=K1_QD0/(SCALING*SCALING), APERTURE:=AP_QD0;
+
+
+
+! -- SEXTUPOLES --
+
+AP_SF6 := 0.00513;
+
+AP_SD5 := 0.003;
+
+AP_SF5 := 0.0059;
+
+AP_SD4 := 0.00415;
+
+AP_SF1 := 0.00483;
+
+
+
+L_SF6 := 1.399642;
+
+L_SD5 := 1.399642;
+
+L_SF5 := 1.399642;
+
+L_SD4 := 1.399642;
+
+L_SF1 := 0.853440;
+
+L_SD0 := 0.853440;
+
+
+
+K2_SF6 := 9.677127306851505 / L_SF6;
+
+K2_SD5 := 17.828403427883195 / L_SD5;
+
+K2_SF5 := -7.4458242446485645 / L_SF5;
+
+K2_SD4 := 15.580207122613874 / L_SD4;
+
+K2_SF1 := -5.875876374964663 / L_SF1;
+
+K2_SD0 := 21.141303090716352 / L_SD0;
+
+
+
+SF6: SEXTUPOLE, L:=L_SF6*SCALING, K2:=K2_SF6*K2_SCALE/(SCALING*SCALING), APERTURE:=AP_SF6;
+
+SD5: SEXTUPOLE, L:=L_SD5*SCALING, K2:=K2_SD5*K2_SCALE/(SCALING*SCALING), APERTURE:=AP_SD5;
+
+SF5: SEXTUPOLE, L:=L_SF5*SCALING, K2:=K2_SF5*K2_SCALE/(SCALING*SCALING), APERTURE:=AP_SF5;
+
+SD4: SEXTUPOLE, L:=L_SD4*SCALING, K2:=K2_SD4*K2_SCALE/(SCALING*SCALING), APERTURE:=AP_SD4;
+
+SF1: SEXTUPOLE, L:=L_SF1*SCALING, K2:=K2_SF1*K2_SCALE/(SCALING*SCALING), APERTURE:=AP_SF1;
+
+SD0: SEXTUPOLE, L:=L_SD0*SCALING, K2:=K2_SD0*K2_SCALE/(SCALING*SCALING), APERTURE:=AP_SD0;
+
+
+
+! -- MULTIPOLES --
+
+L_OCT1 := 0.000000;
+
+L_NEWOCT1 := 0.000000;
+
+L_OCTF1 := 0.000000;
+
+L_SKD0 := 0.000000;
+
+L_NEWOCT2 := 0.000000;
+
+L_OCTD1 := 0.000000;
+
+
+
+K3_OCT1 := -302.2593658186495;
+
+K3_NEWOCT1 := -1183.09657626261;
+
+K3_OCTF1 := 12.802765617541446;
+
+K3_SKD0 := -134.03585916366436;
+
+K3_NEWOCT2 := -734.183536097381;
+
+K3_OCTD1 := 2725.0241388992345;
+
+
+
+OCT1: MULTIPOLE, KNL:={0,0,0,K3_OCT1/(SCALING*SCALING*SCALING)};
+
+NEWOCT1: MULTIPOLE, KNL:={0,0,0,K3_NEWOCT1/(SCALING*SCALING*SCALING)};
+
+OCTF1: MULTIPOLE, KNL:={0,0,0,K3_OCTF1/(SCALING*SCALING*SCALING)};
+
+SKD0: MULTIPOLE, KNL:={0,0,0,K3_SKD0/(SCALING*SCALING*SCALING)};
+
+NEWOCT2: MULTIPOLE, KNL:={0,0,0,K3_NEWOCT2/(SCALING*SCALING*SCALING)};
+
+OCTD1: MULTIPOLE, KNL:={0,0,0,K3_OCTD1/(SCALING*SCALING*SCALING)};
+
+
+
+! -- DECAPOLES --
+
+L_NEWDEC2 := 0.000000;
+
+L_NEWDEC1 := 0.000000;
+
+
+
+K4_NEWDEC2 := 55321886.868739575;
+
+K4_NEWDEC1 := 104765230.0882515;
+
+
+
+NEWDEC2: MULTIPOLE, KNL:={0,0,0,0,K4_NEWDEC2/(SCALING*SCALING*SCALING*SCALING)};
+
+NEWDEC1: MULTIPOLE, KNL:={0,0,0,0,K4_NEWDEC1/(SCALING*SCALING*SCALING*SCALING)};
+
+
+
+FFS_ENTRANCE: MARKER;
+
+FD_ENTRANCE: MARKER;
+
+IP: MARKER;
+
+
+
+FFS_MS: LINE:=(LMD4,QMD11,LMD5,QMD12,LMD6,QMD13,LMD7,QMD14,LMD8,QF8);
+
+
+
+FFS_PR: LINE:=(D8,QD7,LX0,FFB4,FFB4,LX0,QD6C,D7,QD6B,LX0,QD6B,D6,SF6,LX0SF6,
+
+    QF5B,LX0,QF5B,D5OD,OCTDRIFT2,SD5,D5ODT,QF5A,LX01,LX02,QF5A,LX0SF5,SF5,D4ODSF5_OCTDRIFT,OCT1,D_OCT1,
+
+    QD4B,LX0SD4A,SD4,LX0SD4B,QD4A,D3,NEWOCT1,NEWDEC2,D_OCT1_DEC2,FFB3,FFB3,LX0,QF3B,LX0,FFB3B,FFB3B,
+
+    LX0,QF3A,LX0,FFB2,FFB2,LX0,QD2,LX0,FFB1,FFB1,LX0,FFSB1,FFSB1,LX0,FFSB1,FFSB1,
+
+    LX0,FFSB1,FFSB1,LX0,FFSB1,FFSB1,LX0,FFSB1A,FFSB1A,LX0,FFSB1B,FFSB1B,D2OD,OCTDRIFT3);
+
+
+
+FFS_FD: LINE:= (FD_ENTRANCE,SF1,D11,QF1_ENTRANCE,QF1,QF1_EXIT,D_OCTF1,OCTF1,D1_DEC0_LX03,SD0,SKD0,D00,NEWOCT2,NEWDEC1,D_OCT2_DEC1,QD0_ENTRANCE,QD0,QD0_EXIT,OCTD1,D0);
+
+
+
+FFS: LINE:=(FFS_ENTRANCE, FFS_MS, FFS_PR, FFS_FD, IP);
+
+
+
+FFS_TEST: LINE:=(FFS_ENTRANCE, FFS_MS);
+
+! ---- END INLINED ffs_10TeV_updated.madx ----
+
+! ---- BEGIN INLINED optimized_strengths_updated.madx ----
+
+! 1.15 qf1, 40.6/3.0nm, 12.7 lumi
+
+k1_qmd11           =    0.0005506724647 ;
+
+++++++ info: k1_qmd11 redefined
+k1_qmd12           =    -0.001586408559 ;
+
+++++++ info: k1_qmd12 redefined
+k1_qmd13           =      0.03201509765 ;
+
+++++++ info: k1_qmd13 redefined
+k1_qmd14           =     -0.02765854672 ;
+
+++++++ info: k1_qmd14 redefined
+k1_qf8             =      0.04502654298 ;
+
+++++++ info: k1_qf8 redefined
+k1_qd7             =     -0.01675615146 ;
+
+++++++ info: k1_qd7 redefined
+k1_qd6c            =    -0.002658210959 ;
+
+++++++ info: k1_qd6c redefined
+k1_qd6b            =     -0.02955817892 ;
+
+++++++ info: k1_qd6b redefined
+k1_qf5b            =     0.009475334986 ;
+
+++++++ info: k1_qf5b redefined
+k1_qf5a            =     0.008504399313 ;
+
+++++++ info: k1_qf5a redefined
+k1_qd4b            =    -0.005593063367 ;
+
+++++++ info: k1_qd4b redefined
+k1_qd4a            =     -0.00565710598 ;
+
+++++++ info: k1_qd4a redefined
+k1_qf3b            =      0.00136260955 ;
+
+++++++ info: k1_qf3b redefined
+k1_qf3a            =     0.005660737257 ;
+
+++++++ info: k1_qf3a redefined
+k1_qd2             =     -0.00671564461 ;
+
+++++++ info: k1_qd2 redefined
+k1_qf1             =       0.0138608094 ;
+
+k1_qd0             =      -0.0395995352 ;
+
+++++++ info: k1_qd0 redefined
+k2_sf6             =        7.193394844 ;
+
+++++++ info: k2_sf6 redefined
+k2_sf5             =       -4.599129115 ;
+
+++++++ info: k2_sf5 redefined
+k2_sd4             =        11.34384563 ;
+
+++++++ info: k2_sd4 redefined
+k2_sd5             =        8.190276705 ;
+
+++++++ info: k2_sd5 redefined
+k2_sf1             =       -6.837286033 ;
+
+++++++ info: k2_sf1 redefined
+k2_sd0             =        24.75406485 ;
+
+++++++ info: k2_sd0 redefined
+k3_oct1            =       -21.33462915 ;
+
+++++++ info: k3_oct1 redefined
+k3_newoct1         =       -2347.811409 ;
+
+++++++ info: k3_newoct1 redefined
+k3_octf1           =       -436.2539802 ;
+
+++++++ info: k3_octf1 redefined
+k3_skd0            =        743.3830729 ;
+
+++++++ info: k3_skd0 redefined
+k3_newoct2         =       -892.4216859 ;
+
+++++++ info: k3_newoct2 redefined
+k3_octd1           =        4080.067405 ;
+
+++++++ info: k3_octd1 redefined
+k4_newdec1         =        104807024.4 ;
+
+++++++ info: k4_newdec1 redefined
+k4_newdec2         =        55349467.73 ;
+
+++++++ info: k4_newdec2 redefined
+! ---- END INLINED optimized_strengths_updated.madx ----
+
+
+
+FACT = (5000.0/3500.0)^(1.0/3.0); 
+
+
+
+BEND_SCALING = (1.0 / FACT);
+
+
+
+NBFACT = 0.6;
+
+OLDBFACT = 1.6;
+
+LSCALE = 1.0;
+
+FD_LSCALE = 1.0;
+
+BENDING_FACTOR = BEND_SCALING * OLDBFACT * NBFACT / (LSCALE);
+
+SD4_POSITION = 0.00526316;
+
+K2_SCALE = 1 / (OLDBFACT * NBFACT * BEND_SCALING);
+
+
+
+QF1_SCALE = 1.152;
+
+QF1_LENGTH = 5.5942992;
+
+L_D11 = 0.426337493987;
+
+QF1_DRIFT_LENGTH = 5.54620672472;
+
+
+
+L_QF1 = QF1_SCALE * 5.5942992;
+
+L_D1_DEC0_LX03 = QF1_DRIFT_LENGTH + ((QF1_LENGTH - (QF1_SCALE * QF1_LENGTH))/2);
+
+L_D11 = 0.426337493987 + ((QF1_LENGTH - (QF1_SCALE * QF1_LENGTH))/2);
+
+++++++ info: l_d11 redefined
+
+
+NEWBDS: LINE:=(FFS);
+
+! ---- END INLINED 10 TeV BDS DEFINITIONS ----
+
+
+
+! ---- BEGIN EQUIVALENT LINE FOR UPRIGHT SEQUENCE ----
+
+U_mk000: MARKER;
+
+U_mk001: MARKER;
+
+U_mk002: MARKER;
+
+U_mk003: MARKER;
+
+U_mk004: MARKER;
+
+U_mk005: MARKER;
+
+U_mk006: MARKER;
+
+U_q001: QUADRUPOLE, L=4, k1=-0.00956910706576;
+
+U_mk008: MARKER;
+
+U_mk009: MARKER;
+
+U_mk010: MARKER;
+
+U_mk011: MARKER;
+
+U_mk012: MARKER;
+
+U_mk013: MARKER;
+
+U_q002: QUADRUPOLE, L=4, k1=0.0095933586539;
+
+U_mk015: MARKER;
+
+U_mk016: MARKER;
+
+U_mk017: MARKER;
+
+U_mk018: MARKER;
+
+U_mk019: MARKER;
+
+U_mk020: MARKER;
+
+U_mk021: MARKER;
+
+U_mk022: MARKER;
+
+U_mk023: MARKER;
+
+U_q003: QUADRUPOLE, L=4, k1=-0.000447365706736;
+
+U_mk025: MARKER;
+
+U_mk026: MARKER;
+
+U_q004: QUADRUPOLE, L=4, k1=-0.00428249945246;
+
+U_mk028: MARKER;
+
+U_mk029: MARKER;
+
+U_mk030: MARKER;
+
+U_mk031: MARKER;
+
+U_mk032: MARKER;
+
+U_mk033: MARKER;
+
+U_mk034: MARKER;
+
+U_mk035: MARKER;
+
+U_mk036: MARKER;
+
+U_mk037: MARKER;
+
+U_mk038: MARKER;
+
+U_mk039: MARKER;
+
+U_mk040: MARKER;
+
+U_mk041: MARKER;
+
+U_mk042: MARKER;
+
+U_mk043: MARKER;
+
+U_q005: QUADRUPOLE, L=4, k1:=kq005;
+
+U_mk045: MARKER;
+
+U_mk046: MARKER;
+
+U_mk047: MARKER;
+
+U_mk048: MARKER;
+
+U_mk049: MARKER;
+
+U_mk050: MARKER;
+
+U_mk051: MARKER;
+
+U_mk052: MARKER;
+
+U_mk053: MARKER;
+
+U_mk054: MARKER;
+
+U_mk055: MARKER;
+
+U_mk056: MARKER;
+
+U_mk057: MARKER;
+
+U_mk058: MARKER;
+
+U_mk059: MARKER;
+
+U_mk060: MARKER;
+
+U_mk061: MARKER;
+
+U_mk062: MARKER;
+
+U_mk063: MARKER;
+
+U_mk064: MARKER;
+
+U_mk065: MARKER;
+
+U_mk066: MARKER;
+
+U_mk067: MARKER;
+
+U_mk068: MARKER;
+
+U_q006: QUADRUPOLE, L=4, k1:=kq006;
+
+U_mk070: MARKER;
+
+U_mk071: MARKER;
+
+U_mk072: MARKER;
+
+U_mk073: MARKER;
+
+U_mk074: MARKER;
+
+U_mk075: MARKER;
+
+U_mk076: MARKER;
+
+U_mk077: MARKER;
+
+U_mk078: MARKER;
+
+U_mk079: MARKER;
+
+U_mk080: MARKER;
+
+U_mk081: MARKER;
+
+U_mk082: MARKER;
+
+U_q007: QUADRUPOLE, L=4, k1=-0.00574208532769;
+
+U_mk084: MARKER;
+
+U_mk085: MARKER;
+
+U_q008: QUADRUPOLE, L=4, k1:=kq008;
+
+U_mk087: MARKER;
+
+U_mk088: MARKER;
+
+U_mk089: MARKER;
+
+U_mk090: MARKER;
+
+U_mk091: MARKER;
+
+U_mk092: MARKER;
+
+U_mk093: MARKER;
+
+U_mk094: MARKER;
+
+U_mk095: MARKER;
+
+U_mk096: MARKER;
+
+U_mk097: MARKER;
+
+U_mk098: MARKER;
+
+U_mk099: MARKER;
+
+U_mk100: MARKER;
+
+U_mk101: MARKER;
+
+U_mk102: MARKER;
+
+U_mk103: MARKER;
+
+U_mk104: MARKER;
+
+U_q009: QUADRUPOLE, L=4, k1=0.00174374943629;
+
+U_mk106: MARKER;
+
+U_mk107: MARKER;
+
+U_mk108: MARKER;
+
+U_mk109: MARKER;
+
+U_mk110: MARKER;
+
+U_mk111: MARKER;
+
+U_mk112: MARKER;
+
+U_mk113: MARKER;
+
+U_mk114: MARKER;
+
+U_mk115: MARKER;
+
+U_mk116: MARKER;
+
+U_mk117: MARKER;
+
+U_mk118: MARKER;
+
+U_mk119: MARKER;
+
+U_q010: QUADRUPOLE, L=4, k1:=kq010;
+
+U_mk121: MARKER;
+
+U_mk122: MARKER;
+
+U_mk123: MARKER;
+
+U_mk124: MARKER;
+
+U_mk125: MARKER;
+
+U_mk126: MARKER;
+
+U_mk127: MARKER;
+
+U_mk128: MARKER;
+
+U_mk129: MARKER;
+
+U_mk130: MARKER;
+
+U_mk131: MARKER;
+
+U_mk132: MARKER;
+
+U_mk133: MARKER;
+
+U_mk134: MARKER;
+
+U_mk135: MARKER;
+
+U_DR001: DRIFT, L=4;
+
+U_DR002: DRIFT, L=4;
+
+U_DR003: DRIFT, L=4;
+
+U_DR004: DRIFT, L=4;
+
+U_DR005: DRIFT, L=4;
+
+U_DR006: DRIFT, L=4;
+
+U_DR007: DRIFT, L=3.568;
+
+U_DR008: DRIFT, L=0.432;
+
+U_DR009: DRIFT, L=4;
+
+U_DR010: DRIFT, L=4;
+
+U_DR011: DRIFT, L=4;
+
+U_DR012: DRIFT, L=4;
+
+U_DR013: DRIFT, L=4;
+
+U_DR014: DRIFT, L=0.0724;
+
+U_DR015: DRIFT, L=3.9276;
+
+U_DR016: DRIFT, L=4;
+
+U_DR017: DRIFT, L=4;
+
+U_DR018: DRIFT, L=4;
+
+U_DR019: DRIFT, L=4;
+
+U_DR020: DRIFT, L=4;
+
+U_DR021: DRIFT, L=4;
+
+U_DR022: DRIFT, L=4;
+
+U_DR023: DRIFT, L=4;
+
+U_DR024: DRIFT, L=1.1407;
+
+U_DR025: DRIFT, L=2.8593;
+
+U_DR026: DRIFT, L=4;
+
+U_DR027: DRIFT, L=1.141;
+
+U_DR028: DRIFT, L=2.859;
+
+U_DR029: DRIFT, L=4;
+
+U_DR030: DRIFT, L=4;
+
+U_DR031: DRIFT, L=4;
+
+U_DR032: DRIFT, L=4;
+
+U_DR033: DRIFT, L=4;
+
+U_DR034: DRIFT, L=4;
+
+U_DR035: DRIFT, L=4;
+
+U_DR036: DRIFT, L=4;
+
+U_DR037: DRIFT, L=4;
+
+U_DR038: DRIFT, L=4;
+
+U_DR039: DRIFT, L=4;
+
+U_DR040: DRIFT, L=4;
+
+U_DR041: DRIFT, L=4;
+
+U_DR042: DRIFT, L=4;
+
+U_DR043: DRIFT, L=4;
+
+U_DR044: DRIFT, L=3.035;
+
+U_DR045: DRIFT, L=0.965;
+
+U_DR046: DRIFT, L=4;
+
+U_DR047: DRIFT, L=4;
+
+U_DR048: DRIFT, L=4;
+
+U_DR049: DRIFT, L=4;
+
+U_DR050: DRIFT, L=4;
+
+U_DR051: DRIFT, L=4;
+
+U_DR052: DRIFT, L=4;
+
+U_DR053: DRIFT, L=4;
+
+U_DR054: DRIFT, L=4;
+
+U_DR055: DRIFT, L=4;
+
+U_DR056: DRIFT, L=4;
+
+U_DR057: DRIFT, L=4;
+
+U_DR058: DRIFT, L=4;
+
+U_DR059: DRIFT, L=4;
+
+U_DR060: DRIFT, L=4;
+
+U_DR061: DRIFT, L=4;
+
+U_DR062: DRIFT, L=4;
+
+U_DR063: DRIFT, L=4;
+
+U_DR064: DRIFT, L=4;
+
+U_DR065: DRIFT, L=4;
+
+U_DR066: DRIFT, L=4;
+
+U_DR067: DRIFT, L=4;
+
+U_DR068: DRIFT, L=4;
+
+U_DR069: DRIFT, L=2.75;
+
+U_DR070: DRIFT, L=1.25;
+
+U_DR071: DRIFT, L=4;
+
+U_DR072: DRIFT, L=4;
+
+U_DR073: DRIFT, L=4;
+
+U_DR074: DRIFT, L=4;
+
+U_DR075: DRIFT, L=4;
+
+U_DR076: DRIFT, L=4;
+
+U_DR077: DRIFT, L=4;
+
+U_DR078: DRIFT, L=4;
+
+U_DR079: DRIFT, L=4;
+
+U_DR080: DRIFT, L=4;
+
+U_DR081: DRIFT, L=4;
+
+U_DR082: DRIFT, L=4;
+
+U_DR083: DRIFT, L=0.129;
+
+U_DR084: DRIFT, L=3.871;
+
+U_DR085: DRIFT, L=4;
+
+U_DR086: DRIFT, L=3.271;
+
+U_DR087: DRIFT, L=0.729;
+
+U_DR088: DRIFT, L=4;
+
+U_DR089: DRIFT, L=4;
+
+U_DR090: DRIFT, L=4;
+
+U_DR091: DRIFT, L=4;
+
+U_DR092: DRIFT, L=4;
+
+U_DR093: DRIFT, L=4;
+
+U_DR094: DRIFT, L=4;
+
+U_DR095: DRIFT, L=4;
+
+U_DR096: DRIFT, L=4;
+
+U_DR097: DRIFT, L=4;
+
+U_DR098: DRIFT, L=4;
+
+U_DR099: DRIFT, L=4;
+
+U_DR100: DRIFT, L=4;
+
+U_DR101: DRIFT, L=4;
+
+U_DR102: DRIFT, L=4;
+
+U_DR103: DRIFT, L=4;
+
+U_DR104: DRIFT, L=4;
+
+U_DR105: DRIFT, L=3.242;
+
+U_DR106: DRIFT, L=0.758;
+
+U_DR107: DRIFT, L=4;
+
+U_DR108: DRIFT, L=4;
+
+U_DR109: DRIFT, L=4;
+
+U_DR110: DRIFT, L=4;
+
+U_DR111: DRIFT, L=4;
+
+U_DR112: DRIFT, L=4;
+
+U_DR113: DRIFT, L=4;
+
+U_DR114: DRIFT, L=4;
+
+U_DR115: DRIFT, L=4;
+
+U_DR116: DRIFT, L=4;
+
+U_DR117: DRIFT, L=4;
+
+U_DR118: DRIFT, L=4;
+
+U_DR119: DRIFT, L=4;
+
+U_DR120: DRIFT, L=0.92;
+
+U_DR121: DRIFT, L=3.08;
+
+U_DR122: DRIFT, L=4;
+
+U_DR123: DRIFT, L=4;
+
+U_DR124: DRIFT, L=4;
+
+U_DR125: DRIFT, L=4;
+
+U_DR126: DRIFT, L=4;
+
+U_DR127: DRIFT, L=4;
+
+U_DR128: DRIFT, L=4;
+
+U_DR129: DRIFT, L=4;
+
+U_DR130: DRIFT, L=4;
+
+U_DR131: DRIFT, L=4;
+
+U_DR132: DRIFT, L=4;
+
+U_DR133: DRIFT, L=4;
+
+U_DR134: DRIFT, L=4;
+
+U_DR135: DRIFT, L=4;
+
+U_DR136: DRIFT, L=3.995489;
+
+UPRIGHT_EQ: LINE:=(
+
+  U_mk000, U_DR001, U_mk001, U_DR002, U_mk002, U_DR003, U_mk003, U_DR004, U_mk004, U_DR005,
+
+  U_mk005, U_DR006, U_mk006, U_DR007, U_q001, U_DR008, U_mk008, U_DR009, U_mk009, U_DR010,
+
+  U_mk010, U_DR011, U_mk011, U_DR012, U_mk012, U_DR013, U_mk013, U_DR014, U_q002, U_DR015,
+
+  U_mk015, U_DR016, U_mk016, U_DR017, U_mk017, U_DR018, U_mk018, U_DR019, U_mk019, U_DR020,
+
+  U_mk020, U_DR021, U_mk021, U_DR022, U_mk022, U_DR023, U_mk023, U_DR024, U_q003, U_DR025,
+
+  U_mk025, U_DR026, U_mk026, U_DR027, U_q004, U_DR028, U_mk028, U_DR029, U_mk029, U_DR030,
+
+  U_mk030, U_DR031, U_mk031, U_DR032, U_mk032, U_DR033, U_mk033, U_DR034, U_mk034, U_DR035,
+
+  U_mk035, U_DR036, U_mk036, U_DR037, U_mk037, U_DR038, U_mk038, U_DR039, U_mk039, U_DR040,
+
+  U_mk040, U_DR041, U_mk041, U_DR042, U_mk042, U_DR043, U_mk043, U_DR044, U_q005, U_DR045,
+
+  U_mk045, U_DR046, U_mk046, U_DR047, U_mk047, U_DR048, U_mk048, U_DR049, U_mk049, U_DR050,
+
+  U_mk050, U_DR051, U_mk051, U_DR052, U_mk052, U_DR053, U_mk053, U_DR054, U_mk054, U_DR055,
+
+  U_mk055, U_DR056, U_mk056, U_DR057, U_mk057, U_DR058, U_mk058, U_DR059, U_mk059, U_DR060,
+
+  U_mk060, U_DR061, U_mk061, U_DR062, U_mk062, U_DR063, U_mk063, U_DR064, U_mk064, U_DR065,
+
+  U_mk065, U_DR066, U_mk066, U_DR067, U_mk067, U_DR068, U_mk068, U_DR069, U_q006, U_DR070,
+
+  U_mk070, U_DR071, U_mk071, U_DR072, U_mk072, U_DR073, U_mk073, U_DR074, U_mk074, U_DR075,
+
+  U_mk075, U_DR076, U_mk076, U_DR077, U_mk077, U_DR078, U_mk078, U_DR079, U_mk079, U_DR080,
+
+  U_mk080, U_DR081, U_mk081, U_DR082, U_mk082, U_DR083, U_q007, U_DR084, U_mk084, U_DR085,
+
+  U_mk085, U_DR086, U_q008, U_DR087, U_mk087, U_DR088, U_mk088, U_DR089, U_mk089, U_DR090,
+
+  U_mk090, U_DR091, U_mk091, U_DR092, U_mk092, U_DR093, U_mk093, U_DR094, U_mk094, U_DR095,
+
+  U_mk095, U_DR096, U_mk096, U_DR097, U_mk097, U_DR098, U_mk098, U_DR099, U_mk099, U_DR100,
+
+  U_mk100, U_DR101, U_mk101, U_DR102, U_mk102, U_DR103, U_mk103, U_DR104, U_mk104, U_DR105,
+
+  U_q009, U_DR106, U_mk106, U_DR107, U_mk107, U_DR108, U_mk108, U_DR109, U_mk109, U_DR110,
+
+  U_mk110, U_DR111, U_mk111, U_DR112, U_mk112, U_DR113, U_mk113, U_DR114, U_mk114, U_DR115,
+
+  U_mk115, U_DR116, U_mk116, U_DR117, U_mk117, U_DR118, U_mk118, U_DR119, U_mk119, U_DR120,
+
+  U_q010, U_DR121, U_mk121, U_DR122, U_mk122, U_DR123, U_mk123, U_DR124, U_mk124, U_DR125,
+
+  U_mk125, U_DR126, U_mk126, U_DR127, U_mk127, U_DR128, U_mk128, U_DR129, U_mk129, U_DR130,
+
+  U_mk130, U_DR131, U_mk131, U_DR132, U_mk132, U_DR133, U_mk133, U_DR134, U_mk134, U_DR135,
+
+  U_mk135, U_DR136
+
+);
+
+! ---- END EQUIVALENT LINE FOR UPRIGHT SEQUENCE ----
+
+
+
+COMBINED_U10: LINE=(UPRIGHT_EQ, NEWBDS);
+
+
+
+SELECT, FLAG=TWISS, CLEAR;
+
+USE, PERIOD=COMBINED_U10;
+
+SELECT, FLAG=TWISS, CLEAR;
+
+
+
+! Re-match the combined line so the Twiss handoff at FFS_ENTRANCE is exact.
+
+match, sequence=COMBINED_U10,
+
+  BETX=0.2351, ALFX=0,
+
+  BETY=0.2351, ALFY=0,
+
+  DX=0, DPX=0,
+
+  DY=0, DPY=0;
+
+START MATCHING
+
+number of sequences: 1
+sequence name: combined_u10
+entry name: betx
+number of entries: 1
+entry value: 0.235100
+entry name: alfx
+number of entries: 1
+entry value: 0.000000
+entry name: bety
+number of entries: 1
+entry value: 0.235100
+entry name: alfy
+number of entries: 1
+entry value: 0.000000
+entry name: dx
+number of entries: 1
+entry value: 0.000000
+entry name: dpx
+number of entries: 1
+entry value: 0.000000
+entry name: dy
+number of entries: 1
+entry value: 0.000000
+entry name: dpy
+number of entries: 1
+entry value: 0.000000
+  vary, name=kq005, step=1.0e-7, lower=-0.009593358656, upper=0.009593358656;
+
+  vary, name=kq006, step=1.0e-7, lower=-0.009593358656, upper=0.009593358656;
+
+  vary, name=kq008, step=1.0e-7, lower=-0.009593358656, upper=0.009593358656;
+
+  vary, name=kq010, step=1.0e-7, lower=-0.009593358656, upper=0.009593358656;
+
+  constraint, range=FFS_ENTRANCE, BETX=98.80798387931307, weight=1.0e8;
+
+  constraint, range=FFS_ENTRANCE, BETY=26.775980892186183, weight=1.0e8;
+
+  constraint, range=FFS_ENTRANCE, ALFX=0, weight=1.0e8;
+
+  constraint, range=FFS_ENTRANCE, ALFY=0, weight=1.0e8;
+
+  lmdif, calls=12000, tolerance=1.0e-14;
+
+number of variables:    4
+user given constraints: 1
+total constraints:      4
+
+START LMDIF:
+
+Initial Penalty Function =   0.91377002E+02
+
+
+call:       6   Penalty function =   0.50195479E+00
+ ++++++++++ LMDIF ended: converged without success
+call:       6   Penalty function =   0.50195479E+00
+endmatch;
+
+
+MATCH SUMMARY
+
+Node_Name                  Constraint   Type  Target Value       Final Value        Penalty
+--------------------------------------------------------------------------------------------------
+ffs_entrance:1             betx         4     9.88079839E+01     9.88079839E+01     3.19596255E-04
+ffs_entrance:1             bety         4     2.67759809E+01     2.67759809E+01     5.01624342E-01
+ffs_entrance:1             alfx         4     0.00000000E+00     1.49989492E-12     2.24968477E-08
+ffs_entrance:1             alfy         4     0.00000000E+00     3.29081322E-11     1.08294516E-05
+
+
+Final Penalty Function =   5.01954790e-01
+
+
+
+
+
+Variable                 Final Value  Initial Value Lower Limit  Upper Limit 
+--------------------------------------------------------------------------------
+kq005                    -1.77942e-03 -1.77942e-03 -9.59336e-03  9.59336e-03
+kq006                    -5.07741e-03 -5.07741e-03 -9.59336e-03  9.59336e-03
+kq008                     5.01414e-03  5.01414e-03 -9.59336e-03  9.59336e-03
+kq010                     5.90523e-04  5.90523e-04 -9.59336e-03  9.59336e-03
+
+END MATCH SUMMARY
+
+VARIABLE "TAR" SET TO   5.01954790e-01
+
+
+value, kq005;
+
+kq005              =    -0.001779424669 ;
+value, kq006;
+
+kq006              =    -0.005077410996 ;
+value, kq008;
+
+kq008              =     0.005014140152 ;
+value, kq010;
+
+kq010              =    0.0005905225875 ;
+
+
+SELECT, FLAG=TWISS, CLEAR;
+
+twiss,
+
+  BETX=0.2351, ALFX=0,
+
+  BETY=0.2351, ALFY=0,
+
+  DX=0, DPX=0,
+
+  DY=0, DPY=0,
+
+  MUX=0, MUY=0,
+
+  DELTAP=0.00, PT=0.00,
+
+  CHROM=TRUE,
+
+  FILE="combined_upright_10TeV_ffs_match_weighted.twiss";
+
+enter Twiss module
+ Found 1 initial orbit vector values from twiss command. 
+  
+open line - error with deltap:   1.000000E-06
+initial orbit vector:   0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+final orbit vector:     1.152298E-15  3.818356E-10  0.000000E+00  0.000000E+00 -5.560156E-15  0.000000E+00
+  
+open line - error with deltap:   0.000000E+00
+initial orbit vector:   0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+final orbit vector:     0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+       1408.583655                 -0                  0                  0 
+
+                q1                dq1            betxmax              dxmax 
+       2.828306208       -3.173840344        264186.6599      0.01742599145 
+
+             dxrms             xcomax             xcorms                 q2 
+    0.005006434499                  0                  0        2.464828528 
+
+               dq2            betymax              dymax              dyrms 
+      -89.10208134        428773.0977                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0    4.222921917e-07 
+
+           synch_2            synch_3            synch_4            synch_5 
+   2.862887781e-11    9.615290928e-18    3.013524448e-20     2.14348461e-20 
+
+           synch_6            synch_8             nflips              dqmin 
+       365.8286958    2.772696607e-07                  0                  0 
+
+       dqmin_phase 
+                 0 
+
+
+stop;
+
+
+  Number of warnings: 0
+
+  ++++++++++++++++++++++++++++++++++++++++++++
+  +          MAD-X finished normally         +
+  ++++++++++++++++++++++++++++++++++++++++++++

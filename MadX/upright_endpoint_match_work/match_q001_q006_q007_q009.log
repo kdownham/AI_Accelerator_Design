@@ -1,0 +1,897 @@
+
+  ++++++++++++++++++++++++++++++++++++++++++++
+  +     MAD-X 5.09.01  (64 bit, Linux)       +
+  + Support: mad@cern.ch, http://cern.ch/mad +
+  + Release   date: 2023.12.04               +
+  + Execution date: 2026.05.20 09:42:56      +
+  ++++++++++++++++++++++++++++++++++++++++++++
+title, "5 TeV electron upright endpoint retarget with MAD-X MATCH";
+
+
+
+beam, particle=electron, energy=5000;
+
+
+
+! Brho = 16678.204759908 T*m
+
+kq001 = -0.00956910706576;
+
+kq006 = -0.00510615452971;
+
+kq007 = -0.00574208532769;
+
+kq009 = 0.00174374943629;
+
+
+
+upright: sequence, l=543.995489;
+
+  mk000: marker, at=0.000000;
+
+  mk001: marker, at=4.000000;
+
+  mk002: marker, at=8.000000;
+
+  mk003: marker, at=12.000000;
+
+  mk004: marker, at=16.000000;
+
+  mk005: marker, at=20.000000;
+
+  mk006: marker, at=24.000000;
+
+  q001: quadrupole, l=4.000000, k1:=kq001, at=29.568000;
+
+  mk008: marker, at=32.000000;
+
+  mk009: marker, at=36.000000;
+
+  mk010: marker, at=40.000000;
+
+  mk011: marker, at=44.000000;
+
+  mk012: marker, at=48.000000;
+
+  mk013: marker, at=52.000000;
+
+  q002: quadrupole, l=4.000000, k1=0.0095933586539, at=54.072400;
+
+  mk015: marker, at=60.000000;
+
+  mk016: marker, at=64.000000;
+
+  mk017: marker, at=68.000000;
+
+  mk018: marker, at=72.000000;
+
+  mk019: marker, at=76.000000;
+
+  mk020: marker, at=80.000000;
+
+  mk021: marker, at=84.000000;
+
+  mk022: marker, at=88.000000;
+
+  mk023: marker, at=92.000000;
+
+  q003: quadrupole, l=4.000000, k1=-0.000447365706736, at=95.140700;
+
+  mk025: marker, at=100.000000;
+
+  mk026: marker, at=104.000000;
+
+  q004: quadrupole, l=4.000000, k1=-0.00428249945246, at=107.141000;
+
+  mk028: marker, at=112.000000;
+
+  mk029: marker, at=116.000000;
+
+  mk030: marker, at=120.000000;
+
+  mk031: marker, at=124.000000;
+
+  mk032: marker, at=128.000000;
+
+  mk033: marker, at=132.000000;
+
+  mk034: marker, at=136.000000;
+
+  mk035: marker, at=140.000000;
+
+  mk036: marker, at=144.000000;
+
+  mk037: marker, at=148.000000;
+
+  mk038: marker, at=152.000000;
+
+  mk039: marker, at=156.000000;
+
+  mk040: marker, at=160.000000;
+
+  mk041: marker, at=164.000000;
+
+  mk042: marker, at=168.000000;
+
+  mk043: marker, at=172.000000;
+
+  q005: quadrupole, l=4.000000, k1=-0.0017878281586, at=177.035000;
+
+  mk045: marker, at=180.000000;
+
+  mk046: marker, at=184.000000;
+
+  mk047: marker, at=188.000000;
+
+  mk048: marker, at=192.000000;
+
+  mk049: marker, at=196.000000;
+
+  mk050: marker, at=200.000000;
+
+  mk051: marker, at=204.000000;
+
+  mk052: marker, at=208.000000;
+
+  mk053: marker, at=212.000000;
+
+  mk054: marker, at=216.000000;
+
+  mk055: marker, at=220.000000;
+
+  mk056: marker, at=224.000000;
+
+  mk057: marker, at=228.000000;
+
+  mk058: marker, at=232.000000;
+
+  mk059: marker, at=236.000000;
+
+  mk060: marker, at=240.000000;
+
+  mk061: marker, at=244.000000;
+
+  mk062: marker, at=248.000000;
+
+  mk063: marker, at=252.000000;
+
+  mk064: marker, at=256.000000;
+
+  mk065: marker, at=260.000000;
+
+  mk066: marker, at=264.000000;
+
+  mk067: marker, at=268.000000;
+
+  mk068: marker, at=272.000000;
+
+  q006: quadrupole, l=4.000000, k1:=kq006, at=276.750000;
+
+  mk070: marker, at=280.000000;
+
+  mk071: marker, at=284.000000;
+
+  mk072: marker, at=288.000000;
+
+  mk073: marker, at=292.000000;
+
+  mk074: marker, at=296.000000;
+
+  mk075: marker, at=300.000000;
+
+  mk076: marker, at=304.000000;
+
+  mk077: marker, at=308.000000;
+
+  mk078: marker, at=312.000000;
+
+  mk079: marker, at=316.000000;
+
+  mk080: marker, at=320.000000;
+
+  mk081: marker, at=324.000000;
+
+  mk082: marker, at=328.000000;
+
+  q007: quadrupole, l=4.000000, k1:=kq007, at=330.129000;
+
+  mk084: marker, at=336.000000;
+
+  mk085: marker, at=340.000000;
+
+  q008: quadrupole, l=4.000000, k1=0.00506144560391, at=345.271000;
+
+  mk087: marker, at=348.000000;
+
+  mk088: marker, at=352.000000;
+
+  mk089: marker, at=356.000000;
+
+  mk090: marker, at=360.000000;
+
+  mk091: marker, at=364.000000;
+
+  mk092: marker, at=368.000000;
+
+  mk093: marker, at=372.000000;
+
+  mk094: marker, at=376.000000;
+
+  mk095: marker, at=380.000000;
+
+  mk096: marker, at=384.000000;
+
+  mk097: marker, at=388.000000;
+
+  mk098: marker, at=392.000000;
+
+  mk099: marker, at=396.000000;
+
+  mk100: marker, at=400.000000;
+
+  mk101: marker, at=404.000000;
+
+  mk102: marker, at=408.000000;
+
+  mk103: marker, at=412.000000;
+
+  mk104: marker, at=416.000000;
+
+  q009: quadrupole, l=4.000000, k1:=kq009, at=421.242000;
+
+  mk106: marker, at=424.000000;
+
+  mk107: marker, at=428.000000;
+
+  mk108: marker, at=432.000000;
+
+  mk109: marker, at=436.000000;
+
+  mk110: marker, at=440.000000;
+
+  mk111: marker, at=444.000000;
+
+  mk112: marker, at=448.000000;
+
+  mk113: marker, at=452.000000;
+
+  mk114: marker, at=456.000000;
+
+  mk115: marker, at=460.000000;
+
+  mk116: marker, at=464.000000;
+
+  mk117: marker, at=468.000000;
+
+  mk118: marker, at=472.000000;
+
+  mk119: marker, at=476.000000;
+
+  q010: quadrupole, l=4.000000, k1=0.000900107305705, at=478.920000;
+
+  mk121: marker, at=484.000000;
+
+  mk122: marker, at=488.000000;
+
+  mk123: marker, at=492.000000;
+
+  mk124: marker, at=496.000000;
+
+  mk125: marker, at=500.000000;
+
+  mk126: marker, at=504.000000;
+
+  mk127: marker, at=508.000000;
+
+  mk128: marker, at=512.000000;
+
+  mk129: marker, at=516.000000;
+
+  mk130: marker, at=520.000000;
+
+  mk131: marker, at=524.000000;
+
+  mk132: marker, at=528.000000;
+
+  mk133: marker, at=532.000000;
+
+  mk134: marker, at=536.000000;
+
+  mk135: marker, at=540.000000;
+
+endsequence;
+
+
+
+use, sequence=upright;
+
+
+
+match, sequence=upright,
+
+  betx=0.2351, alfx=0,
+
+  bety=0.2351, alfy=0,
+
+  dx=0, dpx=0,
+
+  dy=0, dpy=0;
+
+START MATCHING
+
+number of sequences: 1
+sequence name: upright
+entry name: betx
+number of entries: 1
+entry value: 0.235100
+entry name: alfx
+number of entries: 1
+entry value: 0.000000
+entry name: bety
+number of entries: 1
+entry value: 0.235100
+entry name: alfy
+number of entries: 1
+entry value: 0.000000
+entry name: dx
+number of entries: 1
+entry value: 0.000000
+entry name: dpx
+number of entries: 1
+entry value: 0.000000
+entry name: dy
+number of entries: 1
+entry value: 0.000000
+entry name: dpy
+number of entries: 1
+entry value: 0.000000
+  vary, name=kq001, step=1.0e-5, lower=-0.009593358656, upper=0.009593358656;
+
+  vary, name=kq006, step=1.0e-5, lower=-0.009593358656, upper=0.009593358656;
+
+  vary, name=kq007, step=1.0e-5, lower=-0.009593358656, upper=0.009593358656;
+
+  vary, name=kq009, step=1.0e-5, lower=-0.009593358656, upper=0.009593358656;
+
+  constraint, range=#e, betx=98.8079838793131;
+
+  constraint, range=#e, bety=26.7759808921862;
+
+  constraint, range=#e, alfx=0;
+
+  constraint, range=#e, alfy=0;
+
+  lmdif, calls=8000, tolerance=1.0e-12;
+
+number of variables:    4
+user given constraints: 1
+total constraints:      4
+
+START LMDIF:
+
+Initial Penalty Function =   0.36413445E+03
+
+
+call:       6   Penalty function =   0.26474196E+02
+call:      11   Penalty function =   0.19210807E+02
+call:      16   Penalty function =   0.15013827E+02
+call:      21   Penalty function =   0.86533860E+01
+reset parameter: kq001                   from -0.95995373E-02  to -0.95871800E-02
+call:      27   Penalty function =   0.20662557E+01
+call:      32   Penalty function =   0.82390217E+00
+call:      38   Penalty function =   0.61234319E+00
+call:      43   Penalty function =   0.57030290E+00
+call:      48   Penalty function =   0.37671614E+00
+call:      54   Penalty function =   0.34177563E+00
+call:      59   Penalty function =   0.33588857E+00
+call:      64   Penalty function =   0.30331531E+00
+call:      70   Penalty function =   0.30083555E+00
+call:      75   Penalty function =   0.29946826E+00
+call:      80   Penalty function =   0.29878149E+00
+call:      85   Penalty function =   0.29875563E+00
+call:      91   Penalty function =   0.29859146E+00
+call:      96   Penalty function =   0.29850355E+00
+call:     103   Penalty function =   0.29849858E+00
+call:     108   Penalty function =   0.29849002E+00
+call:     114   Penalty function =   0.29848833E+00
+call:     120   Penalty function =   0.29848685E+00
+call:     126   Penalty function =   0.29848567E+00
+call:     132   Penalty function =   0.29848476E+00
+call:     138   Penalty function =   0.29848407E+00
+call:     144   Penalty function =   0.29848355E+00
+call:     150   Penalty function =   0.29848317E+00
+call:     156   Penalty function =   0.29848288E+00
+call:     162   Penalty function =   0.29848265E+00
+call:     168   Penalty function =   0.29848248E+00
+call:     174   Penalty function =   0.29848234E+00
+call:     180   Penalty function =   0.29848223E+00
+call:     186   Penalty function =   0.29848214E+00
+call:     192   Penalty function =   0.29848206E+00
+call:     198   Penalty function =   0.29848199E+00
+call:     204   Penalty function =   0.29848193E+00
+call:     210   Penalty function =   0.29848188E+00
+call:     216   Penalty function =   0.29848184E+00
+call:     222   Penalty function =   0.29848179E+00
+call:     228   Penalty function =   0.29848175E+00
+call:     234   Penalty function =   0.29848172E+00
+call:     240   Penalty function =   0.29848168E+00
+call:     246   Penalty function =   0.29848165E+00
+call:     252   Penalty function =   0.29848162E+00
+call:     258   Penalty function =   0.29848159E+00
+call:     264   Penalty function =   0.29848156E+00
+call:     270   Penalty function =   0.29848154E+00
+call:     276   Penalty function =   0.29848151E+00
+call:     282   Penalty function =   0.29848149E+00
+call:     288   Penalty function =   0.29848146E+00
+call:     294   Penalty function =   0.29848144E+00
+call:     300   Penalty function =   0.29848142E+00
+call:     306   Penalty function =   0.29848140E+00
+call:     312   Penalty function =   0.29848138E+00
+call:     318   Penalty function =   0.29848136E+00
+call:     324   Penalty function =   0.29848134E+00
+call:     330   Penalty function =   0.29848132E+00
+call:     336   Penalty function =   0.29848130E+00
+call:     342   Penalty function =   0.29848128E+00
+call:     348   Penalty function =   0.29848126E+00
+call:     354   Penalty function =   0.29848125E+00
+call:     360   Penalty function =   0.29848123E+00
+call:     366   Penalty function =   0.29848121E+00
+call:     372   Penalty function =   0.29848120E+00
+call:     378   Penalty function =   0.29848118E+00
+call:     384   Penalty function =   0.29848117E+00
+call:     390   Penalty function =   0.29848115E+00
+call:     396   Penalty function =   0.29848114E+00
+call:     402   Penalty function =   0.29848112E+00
+call:     408   Penalty function =   0.29848111E+00
+call:     414   Penalty function =   0.29848110E+00
+call:     420   Penalty function =   0.29848108E+00
+call:     426   Penalty function =   0.29848107E+00
+call:     432   Penalty function =   0.29848106E+00
+call:     438   Penalty function =   0.29848104E+00
+call:     444   Penalty function =   0.29848103E+00
+call:     450   Penalty function =   0.29848102E+00
+call:     456   Penalty function =   0.29848101E+00
+call:     462   Penalty function =   0.29848099E+00
+call:     468   Penalty function =   0.29848098E+00
+call:     474   Penalty function =   0.29848097E+00
+call:     480   Penalty function =   0.29848096E+00
+call:     486   Penalty function =   0.29848095E+00
+call:     492   Penalty function =   0.29848094E+00
+call:     498   Penalty function =   0.29848093E+00
+call:     504   Penalty function =   0.29848092E+00
+call:     510   Penalty function =   0.29848091E+00
+call:     516   Penalty function =   0.29848089E+00
+call:     522   Penalty function =   0.29848088E+00
+call:     528   Penalty function =   0.29848087E+00
+call:     534   Penalty function =   0.29848086E+00
+call:     540   Penalty function =   0.29848086E+00
+call:     546   Penalty function =   0.29848085E+00
+call:     552   Penalty function =   0.29848084E+00
+call:     558   Penalty function =   0.29848083E+00
+call:     564   Penalty function =   0.29848082E+00
+call:     570   Penalty function =   0.29848081E+00
+call:     576   Penalty function =   0.29848080E+00
+call:     582   Penalty function =   0.29848079E+00
+call:     588   Penalty function =   0.29848078E+00
+call:     594   Penalty function =   0.29848077E+00
+call:     600   Penalty function =   0.29848077E+00
+call:     606   Penalty function =   0.29848076E+00
+call:     612   Penalty function =   0.29848075E+00
+call:     618   Penalty function =   0.29848074E+00
+call:     624   Penalty function =   0.29848073E+00
+call:     630   Penalty function =   0.29848073E+00
+call:     636   Penalty function =   0.29848072E+00
+call:     642   Penalty function =   0.29848071E+00
+call:     648   Penalty function =   0.29848070E+00
+call:     654   Penalty function =   0.29848070E+00
+call:     660   Penalty function =   0.29848069E+00
+call:     666   Penalty function =   0.29848068E+00
+call:     672   Penalty function =   0.29848067E+00
+call:     678   Penalty function =   0.29848067E+00
+call:     684   Penalty function =   0.29848066E+00
+call:     690   Penalty function =   0.29848065E+00
+call:     696   Penalty function =   0.29848065E+00
+call:     702   Penalty function =   0.29848064E+00
+call:     708   Penalty function =   0.29848063E+00
+call:     714   Penalty function =   0.29848063E+00
+call:     720   Penalty function =   0.29848062E+00
+call:     726   Penalty function =   0.29848061E+00
+call:     732   Penalty function =   0.29848061E+00
+call:     738   Penalty function =   0.29848060E+00
+call:     744   Penalty function =   0.29848059E+00
+call:     750   Penalty function =   0.29848059E+00
+call:     756   Penalty function =   0.29848058E+00
+call:     762   Penalty function =   0.29848058E+00
+call:     768   Penalty function =   0.29848057E+00
+call:     774   Penalty function =   0.29848056E+00
+call:     780   Penalty function =   0.29848056E+00
+call:     786   Penalty function =   0.29848055E+00
+call:     792   Penalty function =   0.29848055E+00
+call:     798   Penalty function =   0.29848054E+00
+call:     804   Penalty function =   0.29848054E+00
+call:     810   Penalty function =   0.29848053E+00
+call:     816   Penalty function =   0.29848053E+00
+call:     822   Penalty function =   0.29848052E+00
+call:     828   Penalty function =   0.29848051E+00
+call:     834   Penalty function =   0.29848051E+00
+call:     840   Penalty function =   0.29848050E+00
+call:     846   Penalty function =   0.29848050E+00
+call:     852   Penalty function =   0.29848049E+00
+call:     858   Penalty function =   0.29848049E+00
+call:     864   Penalty function =   0.29848048E+00
+call:     870   Penalty function =   0.29848048E+00
+call:     876   Penalty function =   0.29848047E+00
+call:     882   Penalty function =   0.29848047E+00
+call:     888   Penalty function =   0.29848046E+00
+call:     894   Penalty function =   0.29848046E+00
+call:     900   Penalty function =   0.29848045E+00
+call:     906   Penalty function =   0.29848045E+00
+call:     912   Penalty function =   0.29848045E+00
+call:     918   Penalty function =   0.29848044E+00
+call:     924   Penalty function =   0.29848044E+00
+call:     930   Penalty function =   0.29848043E+00
+call:     936   Penalty function =   0.29848043E+00
+call:     942   Penalty function =   0.29848042E+00
+call:     948   Penalty function =   0.29848042E+00
+call:     954   Penalty function =   0.29848041E+00
+call:     960   Penalty function =   0.29848041E+00
+call:     966   Penalty function =   0.29848041E+00
+call:     972   Penalty function =   0.29848040E+00
+call:     978   Penalty function =   0.29848040E+00
+call:     984   Penalty function =   0.29848039E+00
+call:     990   Penalty function =   0.29848039E+00
+call:     996   Penalty function =   0.29848039E+00
+call:    1002   Penalty function =   0.29848038E+00
+call:    1008   Penalty function =   0.29848038E+00
+call:    1014   Penalty function =   0.29848037E+00
+call:    1020   Penalty function =   0.29848037E+00
+call:    1026   Penalty function =   0.29848037E+00
+call:    1032   Penalty function =   0.29848036E+00
+call:    1038   Penalty function =   0.29848036E+00
+call:    1044   Penalty function =   0.29848035E+00
+call:    1050   Penalty function =   0.29848035E+00
+call:    1056   Penalty function =   0.29848035E+00
+call:    1062   Penalty function =   0.29848034E+00
+call:    1068   Penalty function =   0.29848034E+00
+call:    1074   Penalty function =   0.29848034E+00
+call:    1080   Penalty function =   0.29848033E+00
+call:    1086   Penalty function =   0.29848033E+00
+call:    1092   Penalty function =   0.29848033E+00
+call:    1098   Penalty function =   0.29848032E+00
+call:    1104   Penalty function =   0.29848032E+00
+call:    1110   Penalty function =   0.29848031E+00
+call:    1116   Penalty function =   0.29848031E+00
+call:    1122   Penalty function =   0.29848031E+00
+call:    1128   Penalty function =   0.29848030E+00
+call:    1134   Penalty function =   0.29848030E+00
+call:    1140   Penalty function =   0.29848030E+00
+call:    1146   Penalty function =   0.29848029E+00
+call:    1152   Penalty function =   0.29848029E+00
+call:    1158   Penalty function =   0.29848029E+00
+call:    1164   Penalty function =   0.29848029E+00
+call:    1170   Penalty function =   0.29848028E+00
+call:    1176   Penalty function =   0.29848028E+00
+call:    1182   Penalty function =   0.29848028E+00
+call:    1188   Penalty function =   0.29848027E+00
+call:    1194   Penalty function =   0.29848027E+00
+call:    1200   Penalty function =   0.29848027E+00
+call:    1206   Penalty function =   0.29848026E+00
+call:    1212   Penalty function =   0.29848026E+00
+call:    1218   Penalty function =   0.29848026E+00
+call:    1224   Penalty function =   0.29848025E+00
+call:    1230   Penalty function =   0.29848025E+00
+call:    1236   Penalty function =   0.29848025E+00
+call:    1242   Penalty function =   0.29848025E+00
+call:    1248   Penalty function =   0.29848024E+00
+call:    1254   Penalty function =   0.29848024E+00
+call:    1260   Penalty function =   0.29848024E+00
+call:    1266   Penalty function =   0.29848023E+00
+call:    1272   Penalty function =   0.29848023E+00
+call:    1278   Penalty function =   0.29848023E+00
+call:    1284   Penalty function =   0.29848023E+00
+call:    1290   Penalty function =   0.29848022E+00
+call:    1296   Penalty function =   0.29848022E+00
+call:    1302   Penalty function =   0.29848022E+00
+call:    1308   Penalty function =   0.29848022E+00
+call:    1314   Penalty function =   0.29848021E+00
+call:    1320   Penalty function =   0.29848021E+00
+call:    1326   Penalty function =   0.29848021E+00
+call:    1332   Penalty function =   0.29848021E+00
+call:    1338   Penalty function =   0.29848020E+00
+call:    1344   Penalty function =   0.29848020E+00
+call:    1350   Penalty function =   0.29848020E+00
+call:    1356   Penalty function =   0.29848020E+00
+call:    1362   Penalty function =   0.29848019E+00
+call:    1368   Penalty function =   0.29848019E+00
+call:    1374   Penalty function =   0.29848019E+00
+call:    1380   Penalty function =   0.29848019E+00
+call:    1386   Penalty function =   0.29848018E+00
+call:    1392   Penalty function =   0.29848018E+00
+call:    1398   Penalty function =   0.29848018E+00
+call:    1404   Penalty function =   0.29848018E+00
+call:    1410   Penalty function =   0.29848017E+00
+call:    1416   Penalty function =   0.29848017E+00
+call:    1422   Penalty function =   0.29848017E+00
+call:    1428   Penalty function =   0.29848017E+00
+call:    1434   Penalty function =   0.29848016E+00
+call:    1440   Penalty function =   0.29848016E+00
+call:    1446   Penalty function =   0.29848016E+00
+call:    1452   Penalty function =   0.29848016E+00
+call:    1458   Penalty function =   0.29848015E+00
+call:    1464   Penalty function =   0.29848015E+00
+call:    1470   Penalty function =   0.29848015E+00
+call:    1476   Penalty function =   0.29848015E+00
+call:    1482   Penalty function =   0.29848015E+00
+call:    1488   Penalty function =   0.29848014E+00
+call:    1494   Penalty function =   0.29848014E+00
+call:    1500   Penalty function =   0.29848014E+00
+call:    1506   Penalty function =   0.29848014E+00
+call:    1512   Penalty function =   0.29848014E+00
+call:    1518   Penalty function =   0.29848013E+00
+call:    1524   Penalty function =   0.29848013E+00
+call:    1530   Penalty function =   0.29848013E+00
+call:    1536   Penalty function =   0.29848013E+00
+call:    1542   Penalty function =   0.29848012E+00
+call:    1548   Penalty function =   0.29848012E+00
+call:    1554   Penalty function =   0.29848012E+00
+call:    1560   Penalty function =   0.29848012E+00
+call:    1566   Penalty function =   0.29848012E+00
+call:    1572   Penalty function =   0.29848011E+00
+call:    1578   Penalty function =   0.29848011E+00
+call:    1584   Penalty function =   0.29848011E+00
+call:    1590   Penalty function =   0.29848011E+00
+call:    1596   Penalty function =   0.29848011E+00
+call:    1602   Penalty function =   0.29848011E+00
+call:    1608   Penalty function =   0.29848010E+00
+call:    1614   Penalty function =   0.29848010E+00
+call:    1620   Penalty function =   0.29848010E+00
+call:    1626   Penalty function =   0.29848010E+00
+call:    1632   Penalty function =   0.29848010E+00
+call:    1638   Penalty function =   0.29848009E+00
+call:    1644   Penalty function =   0.29848009E+00
+call:    1650   Penalty function =   0.29848009E+00
+call:    1656   Penalty function =   0.29848009E+00
+call:    1662   Penalty function =   0.29848009E+00
+call:    1668   Penalty function =   0.29848008E+00
+call:    1674   Penalty function =   0.29848008E+00
+call:    1680   Penalty function =   0.29848008E+00
+call:    1686   Penalty function =   0.29848008E+00
+call:    1692   Penalty function =   0.29848008E+00
+call:    1698   Penalty function =   0.29848008E+00
+call:    1704   Penalty function =   0.29848007E+00
+call:    1710   Penalty function =   0.29848007E+00
+call:    1716   Penalty function =   0.29848007E+00
+call:    1722   Penalty function =   0.29848007E+00
+call:    1728   Penalty function =   0.29848007E+00
+call:    1734   Penalty function =   0.29848007E+00
+call:    1740   Penalty function =   0.29848006E+00
+call:    1746   Penalty function =   0.29848006E+00
+call:    1752   Penalty function =   0.29848006E+00
+call:    1758   Penalty function =   0.29848006E+00
+call:    1764   Penalty function =   0.29848006E+00
+call:    1770   Penalty function =   0.29848006E+00
+call:    1776   Penalty function =   0.29848005E+00
+call:    1782   Penalty function =   0.29848005E+00
+call:    1788   Penalty function =   0.29848005E+00
+call:    1794   Penalty function =   0.29848005E+00
+call:    1800   Penalty function =   0.29848005E+00
+call:    1806   Penalty function =   0.29848005E+00
+call:    1812   Penalty function =   0.29848004E+00
+call:    1818   Penalty function =   0.29848004E+00
+call:    1824   Penalty function =   0.29848004E+00
+call:    1830   Penalty function =   0.29848004E+00
+call:    1836   Penalty function =   0.29848004E+00
+call:    1842   Penalty function =   0.29848004E+00
+call:    1848   Penalty function =   0.29848004E+00
+call:    1854   Penalty function =   0.29848003E+00
+call:    1860   Penalty function =   0.29848003E+00
+call:    1866   Penalty function =   0.29848003E+00
+call:    1872   Penalty function =   0.29848003E+00
+call:    1878   Penalty function =   0.29848003E+00
+call:    1884   Penalty function =   0.29848003E+00
+call:    1890   Penalty function =   0.29848003E+00
+call:    1896   Penalty function =   0.29848002E+00
+call:    1902   Penalty function =   0.29848002E+00
+call:    1908   Penalty function =   0.29848002E+00
+call:    1914   Penalty function =   0.29848002E+00
+call:    1920   Penalty function =   0.29848002E+00
+call:    1926   Penalty function =   0.29848002E+00
+call:    1932   Penalty function =   0.29848002E+00
+call:    1938   Penalty function =   0.29848001E+00
+call:    1944   Penalty function =   0.29848001E+00
+call:    1950   Penalty function =   0.29848001E+00
+call:    1956   Penalty function =   0.29848001E+00
+call:    1962   Penalty function =   0.29848001E+00
+call:    1968   Penalty function =   0.29848001E+00
+call:    1974   Penalty function =   0.29848001E+00
+call:    1980   Penalty function =   0.29848000E+00
+call:    1986   Penalty function =   0.29848000E+00
+call:    1992   Penalty function =   0.29848000E+00
+call:    1998   Penalty function =   0.29848000E+00
+call:    2004   Penalty function =   0.29848000E+00
+call:    2010   Penalty function =   0.29848000E+00
+call:    2016   Penalty function =   0.29848000E+00
+call:    2022   Penalty function =   0.29847999E+00
+call:    2028   Penalty function =   0.29847999E+00
+call:    2034   Penalty function =   0.29847999E+00
+call:    2040   Penalty function =   0.29847999E+00
+call:    2046   Penalty function =   0.29847999E+00
+call:    2052   Penalty function =   0.29847999E+00
+call:    2058   Penalty function =   0.29847999E+00
+call:    2064   Penalty function =   0.29847999E+00
+call:    2070   Penalty function =   0.29847998E+00
+call:    2076   Penalty function =   0.29847998E+00
+call:    2082   Penalty function =   0.29847998E+00
+call:    2088   Penalty function =   0.29847998E+00
+call:    2094   Penalty function =   0.29847998E+00
+call:    2100   Penalty function =   0.29847998E+00
+call:    2106   Penalty function =   0.29847998E+00
+call:    2112   Penalty function =   0.29847998E+00
+call:    2118   Penalty function =   0.29847997E+00
+call:    2124   Penalty function =   0.29847997E+00
+call:    2130   Penalty function =   0.29847997E+00
+call:    2136   Penalty function =   0.29847997E+00
+call:    2142   Penalty function =   0.29847997E+00
+call:    2148   Penalty function =   0.29847997E+00
+call:    2154   Penalty function =   0.29847997E+00
+call:    2160   Penalty function =   0.29847997E+00
+call:    2166   Penalty function =   0.29847997E+00
+call:    2172   Penalty function =   0.29847996E+00
+call:    2178   Penalty function =   0.29847996E+00
+call:    2184   Penalty function =   0.29847996E+00
+call:    2190   Penalty function =   0.29847996E+00
+call:    2196   Penalty function =   0.29847996E+00
+call:    2202   Penalty function =   0.29847996E+00
+call:    2208   Penalty function =   0.29847996E+00
+call:    2214   Penalty function =   0.29847996E+00
+call:    2220   Penalty function =   0.29847996E+00
+call:    2226   Penalty function =   0.29847995E+00
+call:    2232   Penalty function =   0.29847995E+00
+call:    2238   Penalty function =   0.29847995E+00
+call:    2244   Penalty function =   0.29847995E+00
+call:    2250   Penalty function =   0.29847995E+00
+call:    2256   Penalty function =   0.29847995E+00
+call:    2262   Penalty function =   0.29847995E+00
+call:    2268   Penalty function =   0.29847995E+00
+call:    2274   Penalty function =   0.29847995E+00
+call:    2280   Penalty function =   0.29847994E+00
+call:    2286   Penalty function =   0.29847994E+00
+call:    2292   Penalty function =   0.29847994E+00
+call:    2298   Penalty function =   0.29847994E+00
+call:    2304   Penalty function =   0.29847994E+00
+call:    2310   Penalty function =   0.29847994E+00
+call:    2316   Penalty function =   0.29847994E+00
+call:    2322   Penalty function =   0.29847994E+00
+call:    2328   Penalty function =   0.29847994E+00
+call:    2334   Penalty function =   0.29847994E+00
+call:    2340   Penalty function =   0.29847993E+00
+call:    2346   Penalty function =   0.29847993E+00
+call:    2352   Penalty function =   0.29847993E+00
+call:    2358   Penalty function =   0.29847993E+00
+call:    2364   Penalty function =   0.29847993E+00
+call:    2370   Penalty function =   0.29847993E+00
+call:    2376   Penalty function =   0.29847993E+00
+call:    2382   Penalty function =   0.29847993E+00
+call:    2388   Penalty function =   0.29847993E+00
+call:    2394   Penalty function =   0.29847993E+00
+call:    2400   Penalty function =   0.29847992E+00
+call:    2406   Penalty function =   0.29847992E+00
+call:    2412   Penalty function =   0.29847992E+00
+call:    2418   Penalty function =   0.29847992E+00
+call:    2424   Penalty function =   0.29847992E+00
+call:    2430   Penalty function =   0.29847992E+00
+call:    2436   Penalty function =   0.29847992E+00
+call:    2442   Penalty function =   0.29847992E+00
+call:    2448   Penalty function =   0.29847992E+00
+call:    2454   Penalty function =   0.29847992E+00
+call:    2460   Penalty function =   0.29847991E+00
+call:    2466   Penalty function =   0.29847991E+00
+call:    2472   Penalty function =   0.29847991E+00
+call:    2478   Penalty function =   0.29847991E+00
+call:    2484   Penalty function =   0.29847991E+00
+call:    2490   Penalty function =   0.29847991E+00
+call:    2496   Penalty function =   0.29847991E+00
+call:    2502   Penalty function =   0.29847991E+00
+call:    2508   Penalty function =   0.29847991E+00
+call:    2514   Penalty function =   0.29847991E+00
+call:    2520   Penalty function =   0.29847991E+00
+ ++++++++++ LMDIF ended: converged without success
+call:    2525   Penalty function =   0.29847991E+00
+endmatch;
+
+
+MATCH SUMMARY
+
+Node_Name                  Constraint   Type  Target Value       Final Value        Penalty
+--------------------------------------------------------------------------------------------------
+upright$end:1              betx         4     9.88079839E+01     9.87940453E+01     1.94283229E-04
+upright$end:1              bety         4     2.67759809E+01     2.67809102E+01     2.42976467E-05
+upright$end:1              alfx         4     0.00000000E+00     5.46122878E-02     2.98250198E-01
+upright$end:1              alfy         4     0.00000000E+00     3.33570179E-04     1.11269064E-05
+
+
+Final Penalty Function =   2.98479906e-01
+
+
+
+
+
+Variable                 Final Value  Initial Value Lower Limit  Upper Limit 
+--------------------------------------------------------------------------------
+kq001                    -9.57761e-03 -9.56911e-03 -9.59336e-03  9.59336e-03
+kq006                    -5.27393e-03 -5.10615e-03 -9.59336e-03  9.59336e-03
+kq007                    -5.55556e-03 -5.74209e-03 -9.59336e-03  9.59336e-03
+kq009                     1.20182e-03  1.74375e-03 -9.59336e-03  9.59336e-03
+
+END MATCH SUMMARY
+
+VARIABLE "TAR" SET TO   2.98479906e-01
+
+
+value, kq001;
+
+kq001              =    -0.009577612295 ;
+value, kq006;
+
+kq006              =    -0.005273928534 ;
+value, kq007;
+
+kq007              =    -0.005555564425 ;
+value, kq009;
+
+kq009              =      0.00120181809 ;
+
+
+twiss,
+
+  betx=0.2351, alfx=0,
+
+  bety=0.2351, alfy=0,
+
+  dx=0, dpx=0,
+
+  dy=0, dpy=0,
+
+  file="/home/keegan/Codex/MadX/upright_endpoint_match_work/match_q001_q006_q007_q009.tfs";
+
+enter Twiss module
+  
+open line - error with deltap:   0.000000E+00
+initial orbit vector:   0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+final orbit vector:     0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+
+++++++ table: summ
+
+            length             orbit5               alfa            gammatr 
+        543.995489                 -0                  0                  0 
+
+                q1                dq1            betxmax              dxmax 
+      0.6377880104                  0        27649.68387                  0 
+
+             dxrms             xcomax             xcorms                 q2 
+                 0                  0                  0       0.9721885707 
+
+               dq2            betymax              dymax              dyrms 
+                 0        24272.35144                  0                  0 
+
+            ycomax             ycorms             deltap            synch_1 
+                 0                  0                  0                  0 
+
+           synch_2            synch_3            synch_4            synch_5 
+                 0                  0                  0                  0 
+
+           synch_6            synch_8             nflips              dqmin 
+                 0                  0                  0                  0 
+
+       dqmin_phase 
+                 0 
+
+
+stop;
+
+
+  Number of warnings: 0
+
+  ++++++++++++++++++++++++++++++++++++++++++++
+  +          MAD-X finished normally         +
+  ++++++++++++++++++++++++++++++++++++++++++++

@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Upright Round-to-Flat Endpoint Retarget Summary</title>
+  <style>
+    :root {
+      --ink: #1f2933;
+      --muted: #5f6b76;
+      --line: #d7dee5;
+      --panel: #f6f8fa;
+      --accent: #005f73;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: #fff;
+      line-height: 1.45;
+    }
+
+    main {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 32px 28px 44px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      color: var(--accent);
+      font-size: 28px;
+      line-height: 1.2;
+    }
+
+    h2 {
+      margin: 30px 0 12px;
+      font-size: 19px;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    code {
+      font-family: "DejaVu Sans Mono", Consolas, monospace;
+      background: #eef3f6;
+      padding: 1px 4px;
+      border-radius: 3px;
+    }
+
+    .summary {
+      margin: 18px 0 24px;
+      padding: 16px 18px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--panel);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 20px;
+      font-size: 14px;
+    }
+
+    th, td {
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      text-align: right;
+      vertical-align: top;
+    }
+
+    th:first-child, td:first-child,
+    th:nth-child(2), td:nth-child(2) {
+      text-align: left;
+    }
+
+    th {
+      background: #eef3f6;
+      font-weight: 700;
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    figure {
+      margin: 12px 0 0;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 10px;
+      background: #fff;
+    }
+
+    figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    figcaption {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Upright Round-to-Flat Endpoint Retarget Summary</h1>
+
+    <section class="summary">
+      <p>
+        This design starts from the current best aperture keeper,
+        <code>upright_peak_reduced_10q_matched</code>, and retargets only the endpoint Twiss values to
+        <code>BETX = 98.80798387931307 m</code> and <code>BETY = 26.775980892186183 m</code>.
+      </p>
+      <p>
+        The rematch used MAD-X <code>MATCH</code> with four quadrupole knobs, preserving the 10-quadrupole layout and
+        the section length. The previous keeper files were not overwritten.
+      </p>
+    </section>
+
+    <h2>Method</h2>
+    <p>
+      The match varied <code>q005</code>, <code>q006</code>, <code>q008</code>, and <code>q010</code> with a
+      <code>160 T/m</code> absolute gradient cap. Endpoint constraints were applied to <code>BETX</code>,
+      <code>BETY</code>, <code>ALFX</code>, and <code>ALFY</code>. A reproducible MAD-X match deck and a static
+      baked-strength result deck were both saved.
+    </p>
+
+    <h2>Validation</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Check</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>MAD-X MATCH final penalty</td><td>9.15725072e-15</td></tr>
+        <tr><td>MAD-X warnings</td><td>0</td></tr>
+        <tr><td>Length</td><td>543.995489 m</td></tr>
+        <tr><td>Maximum gradient</td><td>160.000000 T/m</td></tr>
+        <tr><td>Assumed emittance for beam size</td><td>20 nm geometric RMS</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Endpoint Comparison</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Design</th>
+          <th>BETX [m]</th>
+          <th>BETY [m]</th>
+          <th>ALFX</th>
+          <th>ALFY</th>
+          <th>Max RMS Size [m]</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Previous keeper</td>
+          <td>80.00000723</td>
+          <td>30.00002539</td>
+          <td>-1.447878e-05</td>
+          <td>-1.083923e-04</td>
+          <td>0.0235082355</td>
+        </tr>
+        <tr>
+          <td>Retargeted design</td>
+          <td>98.80798386</td>
+          <td>26.77598088</td>
+          <td>1.768524e-10</td>
+          <td>-1.145193e-08</td>
+          <td>0.0235082355</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Peak Envelope</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Design</th>
+          <th>Max BETX [m]</th>
+          <th>Max BETY [m]</th>
+          <th>Max sigma-x [m]</th>
+          <th>Max sigma-y [m]</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Previous keeper</td>
+          <td>27631.85681</td>
+          <td>24349.69224</td>
+          <td>0.0235082355</td>
+          <td>0.0220679370</td>
+        </tr>
+        <tr>
+          <td>Retargeted design</td>
+          <td>27631.85681</td>
+          <td>24349.69224</td>
+          <td>0.0235082355</td>
+          <td>0.0220679370</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="note">
+      The peak beam envelope is unchanged because the retarget was achieved with downstream optics knobs that do not
+      alter the existing peak-beta locations.
+    </p>
+
+    <h2>Quadrupole Gradients</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Quadrupole</th>
+          <th>Previous [T/m]</th>
+          <th>Retargeted [T/m]</th>
+          <th>Change [T/m]</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><code>q001</code></td><td>-159.595527</td><td>-159.595527</td><td>0.000000</td></tr>
+        <tr><td><code>q002</code></td><td>160.000000</td><td>160.000000</td><td>0.000000</td></tr>
+        <tr><td><code>q003</code></td><td>-7.461257</td><td>-7.461257</td><td>0.000000</td></tr>
+        <tr><td><code>q004</code></td><td>-71.424403</td><td>-71.424403</td><td>0.000000</td></tr>
+        <tr><td><code>q005</code></td><td>-29.817764</td><td>-29.677609</td><td>+0.140155</td></tr>
+        <tr><td><code>q006</code></td><td>-85.161491</td><td>-84.682100</td><td>+0.479391</td></tr>
+        <tr><td><code>q007</code></td><td>-95.767675</td><td>-95.767675</td><td>0.000000</td></tr>
+        <tr><td><code>q008</code></td><td>84.415826</td><td>83.626856</td><td>-0.788970</td></tr>
+        <tr><td><code>q009</code></td><td>29.082610</td><td>29.082610</td><td>0.000000</td></tr>
+        <tr><td><code>q010</code></td><td>15.012174</td><td>9.848857</td><td>-5.163317</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Generated Files</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>File</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><code>upright_endpoint_98p808_26p776_madx_match.madx</code></td><td>Reproducible MAD-X MATCH deck.</td></tr>
+        <tr><td><code>upright_endpoint_98p808_26p776_madx_match.log</code></td><td>MAD-X MATCH log with final penalty and matched knobs.</td></tr>
+        <tr><td><code>upright_endpoint_98p808_26p776_madx_match_result.madx</code></td><td>Static deck with matched strengths baked in.</td></tr>
+        <tr><td><code>upright_endpoint_98p808_26p776_madx_match_result_twiss.tfs</code></td><td>TWISS table for the static result.</td></tr>
+        <tr><td><code>upright_endpoint_98p808_26p776_madx_match_result_plot.png</code></td><td>Plot with survey, beta, alpha, RMS beam size, and strength annotations.</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Plot</h2>
+    <figure>
+      <img src="upright_endpoint_98p808_26p776_madx_match_result_plot.png" alt="Retargeted upright endpoint optics plot">
+      <figcaption>Retargeted endpoint design generated from the static MAD-X result deck.</figcaption>
+    </figure>
+  </main>
+</body>
+</html>
