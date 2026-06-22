@@ -1,0 +1,10 @@
+context=ContextCpu
+particles=10000
+rng_seed=20260617
+sigmas=x:1e-06, y:1e-06, px:1e-06, py:1e-06, zeta:1e-05, delta:0.01
+alive=10000
+lost=0
+line_elements=319
+element_types=collimator:2, drift:186, hkicker:14, marker:49, quadrupole:32, sbend:15, sextupole:12, vkicker:9
+output_npz=/home/keegan/Codex/XSuite/facet_particles_cpu_tracking.npz
+output_png=/home/keegan/Codex/XSuite/facet_particles_cpu_phase_space.png

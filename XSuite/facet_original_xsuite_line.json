@@ -1,0 +1,2059 @@
+{
+ "__class__": "Line",
+ "_extra_config": {
+  "_beamstrahlung_model": null,
+  "_bhabha_model": null,
+  "_needs_rng": false,
+  "_radiation_model": null,
+  "_spin_model": null,
+  "_t_last_update_time_dependent_vars": null,
+  "corrector_limits_x": null,
+  "corrector_limits_y": null,
+  "dt_update_time_dependent_vars": 0.0,
+  "enable_time_dependent_vars": false,
+  "end_compose_on_reload": true,
+  "matrix_responsiveness_tol": 1e-15,
+  "matrix_stability_tol": 0.002,
+  "reset_s_at_end_turn": true,
+  "skip_end_turn_actions": false,
+  "steering_correctors_x": null,
+  "steering_correctors_y": null,
+  "steering_monitors_x": null,
+  "steering_monitors_y": null,
+  "twiss_default": {}
+ },
+ "_var_management_data": {
+  "functions": {
+   "_funcs": {}
+  },
+  "var_values": {
+   "__vary_default": {},
+   "t_turn_s": 0.0
+  }
+ },
+ "_var_manager": [],
+ "config": {
+  "XFIELDS_BB3D_NO_BEAMSTR": true,
+  "XFIELDS_BB3D_NO_BHABHA": true,
+  "XTRACK_GLOBAL_XY_LIMIT": 1.0,
+  "XTRACK_MULTIPOLE_NO_SYNRAD": true
+ },
+ "element_names": [
+  "D199A",
+  "Q19851_1",
+  "BPM19851",
+  "Q19851_2",
+  "D199B1",
+  "XC19900",
+  "D199B2",
+  "YC19900",
+  "D199B3",
+  "Q19871_1",
+  "BPM19871",
+  "Q19871_2",
+  "D199C",
+  "IM1988",
+  "D199D",
+  "LI19TERM",
+  "ENDL3F_2",
+  "BEGBC20",
+  "B1LE",
+  "CB1LE",
+  "D1ET1A",
+  "XC1996",
+  "D1ET1B",
+  "IM2040",
+  "DTPM",
+  "PMON",
+  "DPMM1",
+  "M1E",
+  "DM1Q",
+  "Q1EL",
+  "D2EA",
+  "CN2069",
+  "DCNHC",
+  "CX2085",
+  "DHCYC1A",
+  "SQ1",
+  "DHCYC1B",
+  "DYC1E",
+  "YC1E",
+  "DYC1E",
+  "DYC1XC1",
+  "DXC1E",
+  "XC1E",
+  "DXC1E",
+  "DXC1B",
+  "B2LE_1",
+  "XCB2LE",
+  "B2LE_2",
+  "CB2LE",
+  "MSEP1E",
+  "D3E",
+  "Q2EL",
+  "D4EA1",
+  "S1EL_1",
+  "AS1EL",
+  "S1EL_2",
+  "D4EB1",
+  "M3E",
+  "DM3Q",
+  "Q3EL_1",
+  "DQ3E",
+  "Q3EL_2",
+  "D5EA1",
+  "MS2EL",
+  "S2EL_1",
+  "AS2EL",
+  "S2EL_2",
+  "D5EB1",
+  "DXC2E",
+  "XC2E",
+  "DXC2E",
+  "D5EC1A",
+  "YC2181",
+  "D5EC1B",
+  "S3EL_1",
+  "DS3E",
+  "Q4EL_1",
+  "DQ4E",
+  "Q4EL_2",
+  "DQ4E",
+  "Q4EL_3",
+  "DM4Q",
+  "M4E",
+  "D6EA1",
+  "S3EL_2",
+  "D6EB1",
+  "DYC2E",
+  "YC2E",
+  "DYC2E",
+  "D6EC1",
+  "Q5EL",
+  "DM5Q",
+  "M5E",
+  "D7E1",
+  "B3LE_1",
+  "XCB3LE",
+  "B3LE_2",
+  "CB3LE",
+  "D8EM",
+  "M6E",
+  "DM6Q",
+  "Q6E_1",
+  "MCE",
+  "Q6E_2",
+  "D8E",
+  "B3RE_1",
+  "XCB3RE",
+  "B3RE_2",
+  "CB3RE",
+  "D7E2",
+  "M7E",
+  "DM7Q",
+  "Q5ER",
+  "D6EC2",
+  "DYC3E",
+  "YC3E",
+  "DYC3E",
+  "D6EB2",
+  "S3ER_1",
+  "D6EA2",
+  "M8E",
+  "DM8Q",
+  "Q4ER_1",
+  "DQ4E",
+  "Q4ER_2",
+  "DQ4E",
+  "Q4ER_3",
+  "DS3E",
+  "S3ER_2",
+  "D5EC2A",
+  "YC2321",
+  "D5EC2B",
+  "DXC3E",
+  "XC3E",
+  "DXC3E",
+  "D5EB2",
+  "MS2ER",
+  "S2ER_1",
+  "AS2ER",
+  "S2ER_2",
+  "D5EA2",
+  "Q3ER_1",
+  "DQ3E",
+  "Q3ER_2",
+  "DM9Q",
+  "M9E",
+  "D4EB2",
+  "S1ER_1",
+  "AS1ER",
+  "S1ER_2",
+  "D4EA2",
+  "DMQ",
+  "Q2ER",
+  "D3E",
+  "MSEP2E",
+  "B2RE_1",
+  "XCB2RE",
+  "B2RE_2",
+  "CB2RE",
+  "DB2XC4",
+  "DXC4E",
+  "XC4E",
+  "DXC4E",
+  "DXC4TCA",
+  "DXC4TCB",
+  "DXTCAVF",
+  "DTCWIG",
+  "WIGE1",
+  "DWE",
+  "WIGE2_1",
+  "YCWIGE",
+  "WIGE2_2",
+  "DWE",
+  "WIGE3",
+  "DYAGW",
+  "SYAG",
+  "DYAGQ",
+  "Q1ER",
+  "DM11Q",
+  "M11E",
+  "DTM11",
+  "IM2452",
+  "D1ET2A",
+  "XC2460",
+  "D1ET2B",
+  "B1RE",
+  "CB1RE",
+  "ENDBC20",
+  "BEGFF20",
+  "D11FF",
+  "MFFF",
+  "Q5FF",
+  "D10FF",
+  "M1FF",
+  "D9FF",
+  "BL20_4",
+  "D8FF",
+  "XC1FF",
+  "D8AFF",
+  "YC1FF",
+  "D8BFF",
+  "M2FF",
+  "D7FF",
+  "Q4FF",
+  "D6FF",
+  "Q3FF",
+  "DKRK1",
+  "KRK",
+  "DKRK2",
+  "YC2FF",
+  "D4FF",
+  "USTHZ",
+  "DBMARK67",
+  "D3AFF",
+  "DSTHZ",
+  "D3FF",
+  "XC3FF",
+  "DXTC1",
+  "XTCAVF",
+  "DXTC2",
+  "Q2FF",
+  "D2AFF",
+  "M3FF",
+  "D2FF",
+  "Q1FF",
+  "D1AFF",
+  "M4FF",
+  "D1FF",
+  "Q0FF",
+  "D0FF",
+  "M5FF",
+  "DMQ0FF",
+  "ENDFF20",
+  "BEGEXPT20",
+  "DEX20_1",
+  "EXTHOLE1",
+  "DEX20_2",
+  "USOTR",
+  "DEX20_3",
+  "IQMON20",
+  "DEX20_4",
+  "BEWIN1",
+  "DEX20_5",
+  "LCUBE",
+  "DEX20_6",
+  "PIC_CENT",
+  "DEX20_7",
+  "FILG",
+  "DEX20_8",
+  "FILS",
+  "DEX20_9",
+  "IPOTR1P",
+  "DEX20_10",
+  "IPOTR1",
+  "DEX20_10A",
+  "PENT",
+  "MIP",
+  "DEX20_11",
+  "IPWS1",
+  "DEX20_12",
+  "PEXT",
+  "DEX20_12A",
+  "IPOTR2",
+  "DEX20_13",
+  "IM3255",
+  "DEX20_14",
+  "BEWIN2",
+  "DEX20_15",
+  "IPWS3",
+  "DEX20_16",
+  "DSOTR",
+  "ENDEXPT20",
+  "BEGSPECT20",
+  "DMQ0D",
+  "Q0D",
+  "DM1QEX",
+  "M0EX",
+  "D1D",
+  "WDSOTR",
+  "DMQ1D",
+  "Q1D",
+  "DM1QEX",
+  "M1EX",
+  "D2D",
+  "DMQ2D",
+  "Q2D",
+  "DM1QEX",
+  "M2EX",
+  "D3D",
+  "XC1EX",
+  "D4D",
+  "B5D36",
+  "DM3BEX",
+  "M3EX",
+  "D5D",
+  "BEGPDC",
+  "D6D",
+  "ENDPDC",
+  "D7D",
+  "BEGEDC",
+  "D8D",
+  "ENDEDC",
+  "D9D",
+  "DTOTR",
+  "D10D",
+  "BFLYMID",
+  "D11D",
+  "EXTWIN",
+  "D12D",
+  "PGAM1",
+  "D13D",
+  "CNEAR",
+  "D14D",
+  "PDUMP",
+  "LAIRG",
+  "MAINDUMP",
+  "DBMARK30",
+  "ENDSPECT20",
+  "END"
+ ],
+ "elements": {
+  "AS1EL": {
+   "__class__": "Marker"
+  },
+  "AS1ER": {
+   "__class__": "Marker"
+  },
+  "AS2EL": {
+   "__class__": "Marker"
+  },
+  "AS2ER": {
+   "__class__": "Marker"
+  },
+  "B1LE": {
+   "__class__": "Bend",
+   "angle": 0.022586899464366806,
+   "edge_entry_angle": 0.011294675,
+   "edge_exit_angle": 0.011294675,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 1.0630226014319473,
+   "order": 5
+  },
+  "B1RE": {
+   "__class__": "Bend",
+   "angle": 0.022586899464366806,
+   "edge_entry_angle": 0.011294675,
+   "edge_exit_angle": 0.011294675,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 1.0630226014319473,
+   "order": 5
+  },
+  "B2LE_1": {
+   "__class__": "Bend",
+   "angle": -0.01640421173098978,
+   "edge_entry_angle": -0.01640495070375,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.9124499999999647,
+   "order": 5
+  },
+  "B2LE_2": {
+   "__class__": "Bend",
+   "angle": -0.016404211730991047,
+   "edge_exit_angle": -0.01640495070375,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.9124500000000353,
+   "order": 5
+  },
+  "B2RE_1": {
+   "__class__": "Bend",
+   "angle": -0.01640421173098978,
+   "edge_entry_angle": -0.01640495070375,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.9124499999999647,
+   "order": 5
+  },
+  "B2RE_2": {
+   "__class__": "Bend",
+   "angle": -0.016404211730991047,
+   "edge_exit_angle": -0.01640495070375,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.9124500000000353,
+   "order": 5
+  },
+  "B3LE_1": {
+   "__class__": "Bend",
+   "angle": 0.005110761998808515,
+   "edge_entry_angle": 0.00511027570375,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.2643500000000778,
+   "order": 5
+  },
+  "B3LE_2": {
+   "__class__": "Bend",
+   "angle": 0.005110761998805506,
+   "edge_exit_angle": 0.00511027570375,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.26434999999992215,
+   "order": 5
+  },
+  "B3RE_1": {
+   "__class__": "Bend",
+   "angle": 0.005110761998806317,
+   "edge_entry_angle": 0.00511027570375,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.2643499999999641,
+   "order": 5
+  },
+  "B3RE_2": {
+   "__class__": "Bend",
+   "angle": 0.005110761998807704,
+   "edge_exit_angle": 0.00511027570375,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.26435000000003583,
+   "order": 5
+  },
+  "B5D36": {
+   "__class__": "Bend",
+   "angle": 0.00600000001293,
+   "edge_entry_angle": 0.003,
+   "edge_exit_angle": 0.003,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.9779,
+   "order": 5,
+   "rot_s_rad": 1.5707963267948966
+  },
+  "BEGBC20": {
+   "__class__": "Marker"
+  },
+  "BEGEDC": {
+   "__class__": "Marker"
+  },
+  "BEGEXPT20": {
+   "__class__": "Marker"
+  },
+  "BEGFF20": {
+   "__class__": "Marker"
+  },
+  "BEGPDC": {
+   "__class__": "Marker"
+  },
+  "BEGSPECT20": {
+   "__class__": "Marker"
+  },
+  "BEWIN1": {
+   "__class__": "Marker"
+  },
+  "BEWIN2": {
+   "__class__": "Marker"
+  },
+  "BFLYMID": {
+   "__class__": "Marker"
+  },
+  "BL20_4": {
+   "__class__": "Drift"
+  },
+  "BPM19851": {
+   "__class__": "Drift"
+  },
+  "BPM19871": {
+   "__class__": "Drift"
+  },
+  "CB1LE": {
+   "__class__": "Marker"
+  },
+  "CB1RE": {
+   "__class__": "Marker"
+  },
+  "CB2LE": {
+   "__class__": "Marker"
+  },
+  "CB2RE": {
+   "__class__": "Marker"
+  },
+  "CB3LE": {
+   "__class__": "Marker"
+  },
+  "CB3RE": {
+   "__class__": "Marker"
+  },
+  "CN2069": {
+   "__class__": "Drift"
+  },
+  "CNEAR": {
+   "__class__": "Drift"
+  },
+  "CX2085": {
+   "__class__": "Drift"
+  },
+  "D0FF": {
+   "__class__": "Drift",
+   "length": 0.027833
+  },
+  "D10D": {
+   "__class__": "Drift",
+   "length": 0.05
+  },
+  "D10FF": {
+   "__class__": "Drift",
+   "length": 0.137748
+  },
+  "D11D": {
+   "__class__": "Drift",
+   "length": 0.23
+  },
+  "D11FF": {
+   "__class__": "Drift",
+   "length": 0.383821
+  },
+  "D12D": {
+   "__class__": "Drift",
+   "length": 0.09
+  },
+  "D13D": {
+   "__class__": "Drift",
+   "length": 0.590168
+  },
+  "D14D": {
+   "__class__": "Drift",
+   "length": 1.31
+  },
+  "D199A": {
+   "__class__": "Drift",
+   "length": 3.2062
+  },
+  "D199B1": {
+   "__class__": "Drift",
+   "length": 0.7277
+  },
+  "D199B2": {
+   "__class__": "Drift",
+   "length": 0.343
+  },
+  "D199B3": {
+   "__class__": "Drift",
+   "length": 1.016
+  },
+  "D199C": {
+   "__class__": "Drift",
+   "length": 4.570884
+  },
+  "D199D": {
+   "__class__": "Drift",
+   "length": 0.30849068341400354
+  },
+  "D1AFF": {
+   "__class__": "Drift",
+   "length": 0.025933
+  },
+  "D1D": {
+   "__class__": "Drift",
+   "length": 0.580966
+  },
+  "D1ET1A": {
+   "__class__": "Drift",
+   "length": 2.821013
+  },
+  "D1ET1B": {
+   "__class__": "Drift",
+   "length": 1.0449607036155784
+  },
+  "D1ET2A": {
+   "__class__": "Drift",
+   "length": 2.452948
+  },
+  "D1ET2B": {
+   "__class__": "Drift",
+   "length": 1.4155407036155783
+  },
+  "D1FF": {
+   "__class__": "Drift",
+   "length": 0.837967
+  },
+  "D2AFF": {
+   "__class__": "Drift",
+   "length": 0.034973
+  },
+  "D2D": {
+   "__class__": "Drift",
+   "length": 0.754657
+  },
+  "D2EA": {
+   "__class__": "Drift",
+   "length": 0.917799
+  },
+  "D2FF": {
+   "__class__": "Drift",
+   "length": 0.829867
+  },
+  "D3AFF": {
+   "__class__": "Drift",
+   "length": 0.817
+  },
+  "D3D": {
+   "__class__": "Drift",
+   "length": 0.056305
+  },
+  "D3E": {
+   "__class__": "Drift",
+   "length": 0.1936
+  },
+  "D3FF": {
+   "__class__": "Drift",
+   "length": 0.49065
+  },
+  "D4D": {
+   "__class__": "Drift",
+   "length": 3.177152733425373
+  },
+  "D4EA1": {
+   "__class__": "Drift",
+   "length": 0.193656
+  },
+  "D4EA2": {
+   "__class__": "Drift",
+   "length": 0.10279999999999995
+  },
+  "D4EB1": {
+   "__class__": "Drift",
+   "length": 0.25041199999999997
+  },
+  "D4EB2": {
+   "__class__": "Drift",
+   "length": 0.212555
+  },
+  "D4FF": {
+   "__class__": "Drift",
+   "length": 0.484
+  },
+  "D5D": {
+   "__class__": "Drift",
+   "length": 1.22355893395943
+  },
+  "D5EA1": {
+   "__class__": "Drift",
+   "length": 0.240875
+  },
+  "D5EA2": {
+   "__class__": "Drift",
+   "length": 0.23770000000000002
+  },
+  "D5EB1": {
+   "__class__": "Drift",
+   "length": 0.218886
+  },
+  "D5EB2": {
+   "__class__": "Drift",
+   "length": 0.22119999999999998
+  },
+  "D5EC1A": {
+   "__class__": "Drift",
+   "length": 0.745056
+  },
+  "D5EC1B": {
+   "__class__": "Drift",
+   "length": 0.7295329999999999
+  },
+  "D5EC2A": {
+   "__class__": "Drift",
+   "length": 0.890355
+  },
+  "D5EC2B": {
+   "__class__": "Drift",
+   "length": 0.5850949999999999
+  },
+  "D6D": {
+   "__class__": "Drift",
+   "length": 1.36
+  },
+  "D6EA1": {
+   "__class__": "Drift"
+  },
+  "D6EA2": {
+   "__class__": "Drift"
+  },
+  "D6EB1": {
+   "__class__": "Drift",
+   "length": 0.18757775360329437
+  },
+  "D6EB2": {
+   "__class__": "Drift",
+   "length": 0.15768475360329437
+  },
+  "D6EC1": {
+   "__class__": "Drift",
+   "length": 0.15642775
+  },
+  "D6EC2": {
+   "__class__": "Drift",
+   "length": 0.18632075
+  },
+  "D6FF": {
+   "__class__": "Drift",
+   "length": 0.1957
+  },
+  "D7D": {
+   "__class__": "Drift",
+   "length": 1.1300009999999998
+  },
+  "D7E1": {
+   "__class__": "Drift",
+   "length": 0.2293
+  },
+  "D7E2": {
+   "__class__": "Drift",
+   "length": 0.2293
+  },
+  "D7FF": {
+   "__class__": "Drift",
+   "length": 0.2057
+  },
+  "D8AFF": {
+   "__class__": "Drift",
+   "length": 0.3877
+  },
+  "D8BFF": {
+   "__class__": "Drift",
+   "length": 0.237877
+  },
+  "D8D": {
+   "__class__": "Drift",
+   "length": 0.5
+  },
+  "D8E": {
+   "__class__": "Drift",
+   "length": 0.24179799999999999
+  },
+  "D8EM": {
+   "__class__": "Drift",
+   "length": 0.205155
+  },
+  "D8FF": {
+   "__class__": "Drift",
+   "length": 0.2694
+  },
+  "D9D": {
+   "__class__": "Drift",
+   "length": 4.259999
+  },
+  "D9FF": {
+   "__class__": "Drift",
+   "length": 0.304419
+  },
+  "DB2XC4": {
+   "__class__": "Drift",
+   "length": 0.264
+  },
+  "DBMARK30": {
+   "__class__": "Marker"
+  },
+  "DBMARK67": {
+   "__class__": "Marker"
+  },
+  "DCNHC": {
+   "__class__": "Drift",
+   "length": 0.417207
+  },
+  "DEX20_1": {
+   "__class__": "Drift",
+   "length": 0.072982138228781
+  },
+  "DEX20_10": {
+   "__class__": "Drift",
+   "length": 0.09
+  },
+  "DEX20_10A": {
+   "__class__": "Drift",
+   "length": 0.04
+  },
+  "DEX20_11": {
+   "__class__": "Drift",
+   "length": 0.04
+  },
+  "DEX20_12": {
+   "__class__": "Drift",
+   "length": 1.13
+  },
+  "DEX20_12A": {
+   "__class__": "Drift",
+   "length": 0.05
+  },
+  "DEX20_13": {
+   "__class__": "Drift",
+   "length": 0.9
+  },
+  "DEX20_14": {
+   "__class__": "Drift",
+   "length": 0.11
+  },
+  "DEX20_15": {
+   "__class__": "Drift",
+   "length": 0.05
+  },
+  "DEX20_16": {
+   "__class__": "Drift",
+   "length": 0.13
+  },
+  "DEX20_2": {
+   "__class__": "Drift",
+   "length": 0.26
+  },
+  "DEX20_3": {
+   "__class__": "Drift",
+   "length": 0.1
+  },
+  "DEX20_4": {
+   "__class__": "Drift",
+   "length": 0.06
+  },
+  "DEX20_5": {
+   "__class__": "Drift",
+   "length": 0.12
+  },
+  "DEX20_6": {
+   "__class__": "Drift",
+   "length": 0.72
+  },
+  "DEX20_7": {
+   "__class__": "Drift",
+   "length": 0.4017
+  },
+  "DEX20_8": {
+   "__class__": "Drift",
+   "length": 0.052
+  },
+  "DEX20_9": {
+   "__class__": "Drift",
+   "length": 0.4663
+  },
+  "DHCYC1A": {
+   "__class__": "Drift",
+   "length": 0.6658
+  },
+  "DHCYC1B": {
+   "__class__": "Drift",
+   "length": 0.5076940000000001
+  },
+  "DKRK1": {
+   "__class__": "Drift",
+   "length": 0.691936
+  },
+  "DKRK2": {
+   "__class__": "Drift",
+   "length": 0.231287
+  },
+  "DM11Q": {
+   "__class__": "Drift",
+   "length": 0.17868300000000004
+  },
+  "DM1Q": {
+   "__class__": "Drift",
+   "length": 0.153283
+  },
+  "DM1QEX": {
+   "__class__": "Drift",
+   "length": 0.286595
+  },
+  "DM3BEX": {
+   "__class__": "Drift",
+   "length": 0.35750443506052587
+  },
+  "DM3Q": {
+   "__class__": "Drift",
+   "length": 0.157182
+  },
+  "DM4Q": {
+   "__class__": "Drift",
+   "length": 0.2397
+  },
+  "DM5Q": {
+   "__class__": "Drift"
+  },
+  "DM6Q": {
+   "__class__": "Drift",
+   "length": 0.036643
+  },
+  "DM7Q": {
+   "__class__": "Drift"
+  },
+  "DM8Q": {
+   "__class__": "Drift",
+   "length": 0.2397
+  },
+  "DM9Q": {
+   "__class__": "Drift",
+   "length": 0.185895
+  },
+  "DMQ": {
+   "__class__": "Drift",
+   "length": 0.1
+  },
+  "DMQ0D": {
+   "__class__": "Drift",
+   "length": 0.202439
+  },
+  "DMQ0FF": {
+   "__class__": "Drift",
+   "length": 0.17701988
+  },
+  "DMQ1D": {
+   "__class__": "Drift",
+   "length": 0.356564
+  },
+  "DMQ2D": {
+   "__class__": "Drift",
+   "length": 0.183182
+  },
+  "DPMM1": {
+   "__class__": "Drift",
+   "length": 0.339192
+  },
+  "DQ3E": {
+   "__class__": "Drift",
+   "length": 0.2294
+  },
+  "DQ4E": {
+   "__class__": "Drift",
+   "length": 0.2294
+  },
+  "DS3E": {
+   "__class__": "Drift",
+   "length": 0.2397
+  },
+  "DSOTR": {
+   "__class__": "Drift"
+  },
+  "DSTHZ": {
+   "__class__": "Drift"
+  },
+  "DTCWIG": {
+   "__class__": "Drift",
+   "length": 0.303373944002
+  },
+  "DTM11": {
+   "__class__": "Drift",
+   "length": 0.9162170000000001
+  },
+  "DTOTR": {
+   "__class__": "Drift"
+  },
+  "DTPM": {
+   "__class__": "Drift",
+   "length": 0.60494
+  },
+  "DWE": {
+   "__class__": "Drift",
+   "length": 0.12652539539165467
+  },
+  "DXC1B": {
+   "__class__": "Drift",
+   "length": 0.26755
+  },
+  "DXC1E": {
+   "__class__": "Drift",
+   "length": 0.13
+  },
+  "DXC2E": {
+   "__class__": "Drift",
+   "length": 0.13
+  },
+  "DXC3E": {
+   "__class__": "Drift",
+   "length": 0.13
+  },
+  "DXC4E": {
+   "__class__": "Drift",
+   "length": 0.13
+  },
+  "DXC4TCA": {
+   "__class__": "Drift",
+   "length": 0.029862
+  },
+  "DXC4TCB": {
+   "__class__": "Drift",
+   "length": 0.1915
+  },
+  "DXTC1": {
+   "__class__": "Drift",
+   "length": 0.750525
+  },
+  "DXTC2": {
+   "__class__": "Drift",
+   "length": 1.182251
+  },
+  "DXTCAVF": {
+   "__class__": "Drift",
+   "length": 1.0334497999999999
+  },
+  "DYAGQ": {
+   "__class__": "Drift",
+   "length": 0.213132645543
+  },
+  "DYAGW": {
+   "__class__": "Drift",
+   "length": 0.266981610455
+  },
+  "DYC1E": {
+   "__class__": "Drift",
+   "length": 0.13
+  },
+  "DYC1XC1": {
+   "__class__": "Drift",
+   "length": 0.11399999999999999
+  },
+  "DYC2E": {
+   "__class__": "Drift",
+   "length": 0.068
+  },
+  "DYC3E": {
+   "__class__": "Drift",
+   "length": 0.068
+  },
+  "END": {
+   "__class__": "Marker"
+  },
+  "ENDBC20": {
+   "__class__": "Marker"
+  },
+  "ENDEDC": {
+   "__class__": "Marker"
+  },
+  "ENDEXPT20": {
+   "__class__": "Marker"
+  },
+  "ENDFF20": {
+   "__class__": "Marker"
+  },
+  "ENDL3F_2": {
+   "__class__": "Marker"
+  },
+  "ENDPDC": {
+   "__class__": "Marker"
+  },
+  "ENDSPECT20": {
+   "__class__": "Marker"
+  },
+  "EXTHOLE1": {
+   "__class__": "Marker"
+  },
+  "EXTWIN": {
+   "__class__": "Marker"
+  },
+  "FILG": {
+   "__class__": "Marker"
+  },
+  "FILS": {
+   "__class__": "Marker"
+  },
+  "IM1988": {
+   "__class__": "Marker"
+  },
+  "IM2040": {
+   "__class__": "Marker"
+  },
+  "IM2452": {
+   "__class__": "Marker"
+  },
+  "IM3255": {
+   "__class__": "Marker"
+  },
+  "IPOTR1": {
+   "__class__": "Drift"
+  },
+  "IPOTR1P": {
+   "__class__": "Drift"
+  },
+  "IPOTR2": {
+   "__class__": "Drift"
+  },
+  "IPWS1": {
+   "__class__": "Drift"
+  },
+  "IPWS3": {
+   "__class__": "Drift"
+  },
+  "IQMON20": {
+   "__class__": "Marker"
+  },
+  "KRK": {
+   "__class__": "Marker"
+  },
+  "LAIRG": {
+   "__class__": "Drift",
+   "length": 1.675292943463
+  },
+  "LCUBE": {
+   "__class__": "Marker"
+  },
+  "LI19TERM": {
+   "__class__": "Marker"
+  },
+  "M0EX": {
+   "__class__": "Drift"
+  },
+  "M11E": {
+   "__class__": "Drift"
+  },
+  "M1E": {
+   "__class__": "Drift"
+  },
+  "M1EX": {
+   "__class__": "Drift"
+  },
+  "M1FF": {
+   "__class__": "Drift"
+  },
+  "M2EX": {
+   "__class__": "Drift"
+  },
+  "M2FF": {
+   "__class__": "Drift"
+  },
+  "M3E": {
+   "__class__": "Drift"
+  },
+  "M3EX": {
+   "__class__": "Drift"
+  },
+  "M3FF": {
+   "__class__": "Drift"
+  },
+  "M4E": {
+   "__class__": "Drift"
+  },
+  "M4FF": {
+   "__class__": "Drift"
+  },
+  "M5E": {
+   "__class__": "Drift"
+  },
+  "M5FF": {
+   "__class__": "Drift"
+  },
+  "M6E": {
+   "__class__": "Drift"
+  },
+  "M7E": {
+   "__class__": "Drift"
+  },
+  "M8E": {
+   "__class__": "Drift"
+  },
+  "M9E": {
+   "__class__": "Drift"
+  },
+  "MAINDUMP": {
+   "__class__": "Drift"
+  },
+  "MCE": {
+   "__class__": "Marker"
+  },
+  "MFFF": {
+   "__class__": "Marker"
+  },
+  "MIP": {
+   "__class__": "Marker"
+  },
+  "MS2EL": {
+   "__class__": "Drift"
+  },
+  "MS2ER": {
+   "__class__": "Drift"
+  },
+  "MSEP1E": {
+   "__class__": "Marker"
+  },
+  "MSEP2E": {
+   "__class__": "Marker"
+  },
+  "PDUMP": {
+   "__class__": "Drift"
+  },
+  "PENT": {
+   "__class__": "Marker"
+  },
+  "PEXT": {
+   "__class__": "Marker"
+  },
+  "PGAM1": {
+   "__class__": "Drift"
+  },
+  "PIC_CENT": {
+   "__class__": "Marker"
+  },
+  "PMON": {
+   "__class__": "Drift"
+  },
+  "Q0D": {
+   "__class__": "Quadrupole",
+   "k1": -0.3289057944835062,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 1.0,
+   "order": 5
+  },
+  "Q0FF": {
+   "__class__": "Quadrupole",
+   "k1": 0.530462103777104,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.7142,
+   "order": 5
+  },
+  "Q19851_1": {
+   "__class__": "Quadrupole",
+   "k1": -1.7994573205841737,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.053399999999989456,
+   "order": 5
+  },
+  "Q19851_2": {
+   "__class__": "Quadrupole",
+   "k1": -1.7994573205841737,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.05340000000001055,
+   "order": 5
+  },
+  "Q19871_1": {
+   "__class__": "Quadrupole",
+   "k1": 1.2615713262777195,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.053399999999989456,
+   "order": 5
+  },
+  "Q19871_2": {
+   "__class__": "Quadrupole",
+   "k1": 1.2615713262777195,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.05340000000001055,
+   "order": 5
+  },
+  "Q1D": {
+   "__class__": "Quadrupole",
+   "k1": 0.5422954747012224,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 1.0,
+   "order": 5
+  },
+  "Q1EL": {
+   "__class__": "Quadrupole",
+   "k1": 0.8112611207536828,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.5962,
+   "order": 5
+  },
+  "Q1ER": {
+   "__class__": "Quadrupole",
+   "k1": 0.8112611207536828,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.5962,
+   "order": 5
+  },
+  "Q1FF": {
+   "__class__": "Quadrupole",
+   "k1": -0.9875051255311931,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.7142,
+   "order": 5
+  },
+  "Q2D": {
+   "__class__": "Quadrupole",
+   "k1": -0.3289057944835062,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 1.0,
+   "order": 5
+  },
+  "Q2EL": {
+   "__class__": "Quadrupole",
+   "k1": -0.46243925627105115,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 1.0,
+   "order": 5
+  },
+  "Q2ER": {
+   "__class__": "Quadrupole",
+   "k1": -0.46243925627105115,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 1.0,
+   "order": 5
+  },
+  "Q2FF": {
+   "__class__": "Quadrupole",
+   "k1": 0.5304495090123471,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.7142,
+   "order": 5
+  },
+  "Q3EL_1": {
+   "__class__": "Quadrupole",
+   "k1": 0.46271906240454186,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.7142,
+   "order": 5
+  },
+  "Q3EL_2": {
+   "__class__": "Quadrupole",
+   "k1": 0.46271906240454186,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.7142,
+   "order": 5
+  },
+  "Q3ER_1": {
+   "__class__": "Quadrupole",
+   "k1": 0.46271906240454186,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.7142,
+   "order": 5
+  },
+  "Q3ER_2": {
+   "__class__": "Quadrupole",
+   "k1": 0.46271906240454186,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.7142,
+   "order": 5
+  },
+  "Q3FF": {
+   "__class__": "Quadrupole",
+   "k1": 0.41657184433518113,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.7142,
+   "order": 5
+  },
+  "Q4EL_1": {
+   "__class__": "Quadrupole",
+   "k1": 0.5552947816228344,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.7142,
+   "order": 5
+  },
+  "Q4EL_2": {
+   "__class__": "Quadrupole",
+   "k1": 0.5552947816228344,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.7142,
+   "order": 5
+  },
+  "Q4EL_3": {
+   "__class__": "Quadrupole",
+   "k1": 0.5552947816228344,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.7142,
+   "order": 5
+  },
+  "Q4ER_1": {
+   "__class__": "Quadrupole",
+   "k1": 0.5552947816228344,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.7142,
+   "order": 5
+  },
+  "Q4ER_2": {
+   "__class__": "Quadrupole",
+   "k1": 0.5552947816228344,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.7142,
+   "order": 5
+  },
+  "Q4ER_3": {
+   "__class__": "Quadrupole",
+   "k1": 0.5552947816228344,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.7142,
+   "order": 5
+  },
+  "Q4FF": {
+   "__class__": "Quadrupole",
+   "k1": -0.34111241042154505,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.7142,
+   "order": 5
+  },
+  "Q5EL": {
+   "__class__": "Quadrupole",
+   "k1": -0.16358883073847785,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.4284,
+   "order": 5
+  },
+  "Q5ER": {
+   "__class__": "Quadrupole",
+   "k1": -0.16358883073847785,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.4284,
+   "order": 5
+  },
+  "Q5FF": {
+   "__class__": "Quadrupole",
+   "k1": -0.46733696154990456,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.4609,
+   "order": 5
+  },
+  "Q6E_1": {
+   "__class__": "Quadrupole",
+   "k1": -1.3760789188623517,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.15500000000002728,
+   "order": 5
+  },
+  "Q6E_2": {
+   "__class__": "Quadrupole",
+   "k1": -1.3760789188623517,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.15499999999997272,
+   "order": 5
+  },
+  "S1EL_1": {
+   "__class__": "Sextupole",
+   "k2": 9.653280424152063,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.125,
+   "order": 5
+  },
+  "S1EL_2": {
+   "__class__": "Sextupole",
+   "k2": 9.653280424152063,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.125,
+   "order": 5
+  },
+  "S1ER_1": {
+   "__class__": "Sextupole",
+   "k2": 9.653280424152063,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.125,
+   "order": 5
+  },
+  "S1ER_2": {
+   "__class__": "Sextupole",
+   "k2": 9.653280424152063,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.125,
+   "order": 5
+  },
+  "S2EL_1": {
+   "__class__": "Sextupole",
+   "k2": -8.06453389797501,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.3810000000000282,
+   "order": 5
+  },
+  "S2EL_2": {
+   "__class__": "Sextupole",
+   "k2": -8.06453389797501,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.3809999999999718,
+   "order": 5
+  },
+  "S2ER_1": {
+   "__class__": "Sextupole",
+   "k2": -8.06453389797501,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.3810000000000282,
+   "order": 5
+  },
+  "S2ER_2": {
+   "__class__": "Sextupole",
+   "k2": -8.06453389797501,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.3809999999999718,
+   "order": 5
+  },
+  "S3EL_1": {
+   "__class__": "Sextupole",
+   "k2": -12.225326495535251,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.25,
+   "order": 5
+  },
+  "S3EL_2": {
+   "__class__": "Sextupole",
+   "k2": -12.225326495535251,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.25,
+   "order": 5
+  },
+  "S3ER_1": {
+   "__class__": "Sextupole",
+   "k2": -12.225326495535251,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.25,
+   "order": 5
+  },
+  "S3ER_2": {
+   "__class__": "Sextupole",
+   "k2": -12.225326495535251,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.25,
+   "order": 5
+  },
+  "SQ1": {
+   "__class__": "Quadrupole",
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.3813,
+   "order": 5,
+   "rot_s_rad": 0.7853981633974483
+  },
+  "SYAG": {
+   "__class__": "Drift"
+  },
+  "USOTR": {
+   "__class__": "Drift"
+  },
+  "USTHZ": {
+   "__class__": "Drift"
+  },
+  "WDSOTR": {
+   "__class__": "Drift"
+  },
+  "WIGE1": {
+   "__class__": "Bend",
+   "angle": -0.0025,
+   "edge_exit_angle": -0.0025,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.244000254166852,
+   "order": 5,
+   "rot_s_rad": 1.5707963267948966
+  },
+  "WIGE2_1": {
+   "__class__": "Bend",
+   "angle": 0.0025000000000000295,
+   "edge_entry_angle": 0.0025,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.2440002541668549,
+   "order": 5,
+   "rot_s_rad": 1.5707963267948966
+  },
+  "WIGE2_2": {
+   "__class__": "Bend",
+   "angle": 0.0024999999999999706,
+   "edge_exit_angle": 0.0025,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.24400025416684912,
+   "order": 5,
+   "rot_s_rad": 1.5707963267948966
+  },
+  "WIGE3": {
+   "__class__": "Bend",
+   "angle": -0.0025,
+   "edge_entry_angle": -0.0025,
+   "knl_rel": [
+    0.0
+   ],
+   "ksl_rel": [
+    0.0
+   ],
+   "length": 0.244000254166852,
+   "order": 5,
+   "rot_s_rad": 1.5707963267948966
+  },
+  "XC19900": {
+   "__class__": "Marker"
+  },
+  "XC1996": {
+   "__class__": "Marker"
+  },
+  "XC1E": {
+   "__class__": "Marker"
+  },
+  "XC1EX": {
+   "__class__": "Marker"
+  },
+  "XC1FF": {
+   "__class__": "Marker"
+  },
+  "XC2460": {
+   "__class__": "Marker"
+  },
+  "XC2E": {
+   "__class__": "Marker"
+  },
+  "XC3E": {
+   "__class__": "Marker"
+  },
+  "XC3FF": {
+   "__class__": "Marker"
+  },
+  "XC4E": {
+   "__class__": "Marker"
+  },
+  "XCB2LE": {
+   "__class__": "Marker"
+  },
+  "XCB2RE": {
+   "__class__": "Marker"
+  },
+  "XCB3LE": {
+   "__class__": "Marker"
+  },
+  "XCB3RE": {
+   "__class__": "Marker"
+  },
+  "XTCAVF": {
+   "__class__": "Drift",
+   "length": 1.0334497999999999
+  },
+  "YC19900": {
+   "__class__": "Marker"
+  },
+  "YC1E": {
+   "__class__": "Marker"
+  },
+  "YC1FF": {
+   "__class__": "Marker"
+  },
+  "YC2181": {
+   "__class__": "Marker"
+  },
+  "YC2321": {
+   "__class__": "Marker"
+  },
+  "YC2E": {
+   "__class__": "Marker"
+  },
+  "YC2FF": {
+   "__class__": "Marker"
+  },
+  "YC3E": {
+   "__class__": "Marker"
+  },
+  "YCWIGE": {
+   "__class__": "Marker"
+  }
+ },
+ "env_particles": {},
+ "metadata": {},
+ "mode": "normal",
+ "particle_ref": {
+  "_rng_s1": [
+   0
+  ],
+  "_rng_s2": [
+   0
+  ],
+  "_rng_s3": [
+   0
+  ],
+  "_rng_s4": [
+   0
+  ],
+  "anomalous_magnetic_moment": [
+   0.0
+  ],
+  "at_element": [
+   0
+  ],
+  "at_turn": [
+   0
+  ],
+  "ax": [
+   0.0
+  ],
+  "ay": [
+   0.0
+  ],
+  "beta0": [
+   0.9999999986944004
+  ],
+  "charge_ratio": [
+   1.0
+  ],
+  "chi": [
+   1.0
+  ],
+  "delta": [
+   0.0
+  ],
+  "gamma0": [
+   19569.511861141782
+  ],
+  "mass0": 510998.95,
+  "p0c": [
+   10000000000.0
+  ],
+  "parent_particle_id": [
+   0
+  ],
+  "particle_id": [
+   0
+  ],
+  "pdg_id": [
+   0
+  ],
+  "ptau": [
+   0.0
+  ],
+  "px": [
+   0.0
+  ],
+  "py": [
+   0.0
+  ],
+  "q0": -1.0,
+  "rpp": [
+   1.0
+  ],
+  "rvv": [
+   1.0
+  ],
+  "s": [
+   0.0
+  ],
+  "spin_x": [
+   0.0
+  ],
+  "spin_y": [
+   0.0
+  ],
+  "spin_z": [
+   0.0
+  ],
+  "start_tracking_at_element": -1,
+  "state": [
+   1
+  ],
+  "t_sim": 3.367563706493007e-07,
+  "weight": [
+   1.0
+  ],
+  "x": [
+   0.0
+  ],
+  "y": [
+   0.0
+  ],
+  "zeta": [
+   0.0
+  ]
+ },
+ "xtrack_version": "0.103.0"
+}

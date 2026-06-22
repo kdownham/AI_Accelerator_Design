@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FACET Xsuite Tracking SR Comparison</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 28px;
+      color: #1f2937;
+      line-height: 1.45;
+    }
+    h1, h2 { color: #111827; }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 14px 0 26px;
+      font-size: 13px;
+    }
+    th, td {
+      border: 1px solid #d1d5db;
+      padding: 7px 9px;
+      text-align: right;
+      white-space: nowrap;
+    }
+    th:first-child, td:first-child { text-align: left; }
+    th { background: #f3f4f6; }
+    img {
+      max-width: 100%;
+      border: 1px solid #d1d5db;
+    }
+    .note { color: #4b5563; }
+    code { background: #f3f4f6; padding: 1px 4px; }
+  </style>
+</head>
+<body>
+  <h1>FACET Xsuite Particle Tracking: Synchrotron Radiation Comparison</h1>
+  <p>
+    Compared three one-pass CPU tracking runs using the same realistic independent x/y FACET input distribution:
+    no synchrotron radiation, mean synchrotron radiation, and quantum synchrotron radiation.
+    Each run used 10,000 macroparticles and saved the start/end particle distributions.
+  </p>
+
+  <h2>Endpoint RMS Values</h2>
+  <p class="note">RMS values are computed over particles with positive final state. Scientific notation is kept to expose small differences between the SR modes.</p>
+  <table>
+<thead><tr>
+<th>Mode</th>
+<th>Alive</th>
+<th>Lost</th>
+<th>RMS x [m]</th>
+<th>RMS px [rad]</th>
+<th>RMS y [m]</th>
+<th>RMS py [rad]</th>
+<th>RMS zeta [m]</th>
+<th>RMS delta</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>No SR</td>
+<td>10000</td>
+<td>0</td>
+<td>1.0048185012e-04</td>
+<td>1.0069683531e-05</td>
+<td>2.8192655363e-05</td>
+<td>9.3999159132e-06</td>
+<td>2.0028992015e-05</td>
+<td>1.0000529649e-04</td>
+</tr>
+<tr>
+<td>Mean SR</td>
+<td>10000</td>
+<td>0</td>
+<td>1.0062669425e-04</td>
+<td>1.0073136828e-05</td>
+<td>2.8182924091e-05</td>
+<td>9.4028476595e-06</td>
+<td>2.0028923107e-05</td>
+<td>9.9997747247e-05</td>
+</tr>
+<tr>
+<td>Quantum SR</td>
+<td>10000</td>
+<td>0</td>
+<td>1.0063119487e-04</td>
+<td>1.0073558970e-05</td>
+<td>2.8214895289e-05</td>
+<td>9.4040151032e-06</td>
+<td>2.0029472011e-05</td>
+<td>1.0078338876e-04</td>
+</tr>
+</tbody></table>
+
+  <h2>Endpoint Mean Energy Offset</h2>
+  <table>
+<thead><tr><th>Mode</th><th>Mean delta at endpoint</th></tr></thead>
+<tbody>
+<tr><td>No SR</td><td>-3.2960543628e-07</td></tr>
+<tr><td>Mean SR</td><td>-3.7978583401e-05</td></tr>
+<tr><td>Quantum SR</td><td>-3.7919123467e-05</td></tr>
+</tbody></table>
+
+  <h2>RMS-Normalized Phase-Space Comparison</h2>
+  <p class="note">The overlaid start/end plot uses coordinates normalized by each distribution's own RMS in that dimension. The physical RMS values are printed in each panel.</p>
+  <img src="facet_sr_phase_space_rms_compare.png" alt="RMS-normalized phase-space comparison for no SR, mean SR, and quantum SR">
+
+  <h2>Files</h2>
+  <ul>
+    <li><code>facet_sr_phase_space_rms_compare.png</code></li>
+    <li><code>facet_realistic_independent_snapshots.npz</code></li>
+    <li><code>facet_realistic_radiation_mean_start_end.npz</code></li>
+    <li><code>facet_realistic_radiation_quantum_start_end.npz</code></li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,15 @@
+source=/home/keegan/Codex/MadX/FACET/flatGoldenLattice_line4_stub_10gev.madx
+elements=319
+element_types=collimator:2, drift:186, hkicker:14, marker:49, quadrupole:32, sbend:15, sextupole:12, vkicker:9
+length_m=100.957019972
+end_betx_m=39.0379343409
+end_bety_m=2.91834214158
+end_alfx=-3.80330487163
+end_alfy=0.0204020180665
+max_betx_m=168.338553813
+max_bety_m=211.84428523
+min_dx_m=-0.444893418079
+max_dx_m=0.18825958169
+twiss_csv=/home/keegan/Codex/XSuite/facet_original_xsuite_twiss.csv
+line_json=/home/keegan/Codex/XSuite/facet_original_xsuite_line.json
+plot_png=/home/keegan/Codex/XSuite/facet_original_xsuite_twiss.png
