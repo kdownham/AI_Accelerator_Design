@@ -1,0 +1,83 @@
+BEAM, SEQUENCE=NEWBDS ,PARTICLE=ELECTRON, ENERGY=5000, RADIATE=FALSE;
+
+OPTION, -ECHO, -INFO;
+
+CALL, FILE= "ffs_10TeV_updated.madx";
+CALL, FILE= "optimized_strengths_updated.madx";
+
+FACT = (5000.0/3500.0)^(1.0/3.0); 
+
+BEND_SCALING = (1.0 / FACT);
+
+NBFACT = 0.6;
+OLDBFACT = 1.6;
+LSCALE = 1.0;
+FD_LSCALE = 1.0;
+BENDING_FACTOR = BEND_SCALING * OLDBFACT * NBFACT / (LSCALE);
+SD4_POSITION = 0.00526316;
+K2_SCALE = 1 / (OLDBFACT * NBFACT * BEND_SCALING);
+
+QF1_SCALE = 1.152;
+QF1_LENGTH = 5.5942992;
+L_D11 = 0.426337493987;
+QF1_DRIFT_LENGTH = 5.54620672472;
+
+L_QF1 = QF1_SCALE * 5.5942992;
+L_D1_DEC0_LX03 = QF1_DRIFT_LENGTH + ((QF1_LENGTH - (QF1_SCALE * QF1_LENGTH))/2);
+L_D11 = 0.426337493987 + ((QF1_LENGTH - (QF1_SCALE * QF1_LENGTH))/2);
+
+NEWBDS: LINE:=(FFS);
+
+SELECT, FLAG=TWISS,CLEAR;
+USE, PERIOD=NEWBDS;
+SELECT, FLAG=TWISS,CLEAR;
+
+BETX_BDS = 64.9998842 * (5000/1500)^(1/3);
+BETY_BDS = 17.99971386 * (5000/1500)^(1/3);
+
+BETX_FFS = 66.14532014 * (3500/1500)^(1/3) * (5000/3500)^(1/3);
+BETY_FFS = 17.92472388 * (3500/1500)^(1/3) * (5000/3500)^(1/3);
+!BETY_FFS = 2.677598089 * 1000.0;
+
+BETX = BETX_FFS;
+BETY = BETY_FFS;
+
+!BETX = BETX_BDS;
+!BETY = BETY_BDS;
+
+ALFX = 0;
+ALFY = 0;
+DX = 0;
+MUX = 0;
+MUY = 0;
+
+!SELECT, FLAG=TWISS, CLEAR;
+!select,flag=twiss,class=sbend,column=name,s,ANGLE;
+!select,flag=twiss,class=MULTIPOLE,column=name,s,k2l,k2sl,k3l,k3sl,k4l,k4sl;
+!TWISS,BETX=BETX,BETY=BETY,ALFX=ALFX,ALFY=ALFY, MUX=MUX, MUY=MUY, DX=DX, DELTAP=0.00, FILE="FF4PLACET";
+
+! PTC code for producing fort.18 file
+	ptc_create_universe;
+        ptc_create_layout,model=2,method=6,nst=10;
+        SELECT, flag=ptc_twiss, clear;
+        select,flag=ptc_twiss,clear;
+        select,flag=ptc_twiss,column=name,s,beta11,mu1,beta22,mu2,k2l,disp1,alfa11,alfa22,disp2,beta12,beta21,eign11,eign12,eign13,eign14,eign15,eign16, aper_1, aper_2;
+        SELECT, flag=ptc_twiss, column=name, s,betx,mux,bety,muy,k2l,dx,alfx,alfy,dpx,dy,dpy,R11,R12,R21,R22;
+        ptc_twiss,betx=BETX,bety=BETY,alfx=0,alfy=0,file=twiss_ptc_line_sole;
+       ptc_normal,icase=5,no=5,deltap=0.00;
+        ptc_end;
+
+select, flag=twiss, clear;
+!select,flag=twiss,class=SEXTUPOLE,column=name,s,l,k2l,k2sl,tilt,ktap;
+!twiss,BETX=betx,BETY=bety,ALFX=Alfx,ALFY=Alfy, mux=mux, muy=muy, dx=Dx, deltap=0.00, file="ff4placet_7TeV_updated";
+twiss,BETX=betx,BETY=bety,ALFX=Alfx,ALFY=Alfy,mux=mux,muy=muy,dx=Dx,deltap=0.00,pt=0.00,CHROM=TRUE,file="bds_10TeV.twiss";
+
+plot,haxis=s,colour=100,vaxis1=betx,bety,vaxis2=dx,dy,vmin=0.0,-0.030,vmax=500000,0.010,noversion=true,title='Beta Functions',file="plot_10TeV";
+
+survey,file=survey_10TeV.cas;
+
+!# placet
+!system, "./madx2placet.pl bds_10TeV.twiss 0 1 1 > Lines/bds_10TeV.tcl";
+!system, "sed -i 's/NEWBDS\$START/NEWBDS2START/g'  Lines/bds_10TeV.tcl";
+!system, "sed -i 's/NEWBDS\$END/NEWBDS2END/g'   Lines/bds_10TeV.tcl";
+!system, 'python3 average_luminosity.py';

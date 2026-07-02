@@ -1,0 +1,60 @@
+{
+  "conversion": {
+    "delta": "sqrt((energy_eV)^2 - mass0^2) / p0c_eV - 1",
+    "px_py": "from slopes x'=px/pz, y'=py/pz",
+    "source_columns": "energy [GeV], x [um], y [um], z [um], x' [urad], y' [urad]",
+    "zeta": "zeta = -z_um * 1e-6"
+  },
+  "format": "npz arrays readable by numpy and usable to construct xpart.Particles",
+  "outputs": {
+    "electron": {
+      "source": "/home/keegan/Codex/XSuite/10TeV/electron_placet_into_FFS.ini",
+      "stats": {
+        "mean_delta": 1.144252557123718e-05,
+        "mean_px": 8.838298575235886e-11,
+        "mean_py": -2.4005170318147228e-11,
+        "mean_x_m": -9.182165385970098e-09,
+        "mean_y_m": 2.5433813911034446e-10,
+        "mean_zeta_m": 8.946678035477496e-08,
+        "n_particles": 100000,
+        "q0": -1,
+        "rms_delta": 0.0028789098522887936,
+        "rms_px": 3.192075641809602e-08,
+        "rms_py": 1.0692194908420804e-08,
+        "rms_x_m": 2.1126236312906727e-06,
+        "rms_y_m": 1.9156971195508581e-07,
+        "rms_zeta_m": 4.331332992231112e-05,
+        "total_weight": 23250000000.0
+      },
+      "target": "/home/keegan/Codex/XSuite/10TeV/electron_placet_into_FFS_xsuite_particles.npz"
+    },
+    "positron": {
+      "source": "/home/keegan/Codex/XSuite/10TeV/positron_placet_into_FFS.ini",
+      "stats": {
+        "mean_delta": 1.144252557123718e-05,
+        "mean_px": 8.838298575235886e-11,
+        "mean_py": -2.4005170318147228e-11,
+        "mean_x_m": -9.182165385970098e-09,
+        "mean_y_m": 2.5433813911034446e-10,
+        "mean_zeta_m": 8.946678035477496e-08,
+        "n_particles": 100000,
+        "q0": 1,
+        "rms_delta": 0.0028789098522887936,
+        "rms_px": 3.192075641809602e-08,
+        "rms_py": 1.0692194908420804e-08,
+        "rms_x_m": 2.1126236312906727e-06,
+        "rms_y_m": 1.9156971195508581e-07,
+        "rms_zeta_m": 4.331332992231112e-05,
+        "total_weight": 23250000000.0
+      },
+      "target": "/home/keegan/Codex/XSuite/10TeV/positron_placet_into_FFS_xsuite_particles.npz"
+    }
+  },
+  "units": {
+    "delta": "p/p0c - 1",
+    "mass0_eV": "eV",
+    "p0c_eV": "eV",
+    "px_py": "normalized momenta relative to p0c",
+    "x_y_zeta": "m"
+  }
+}
